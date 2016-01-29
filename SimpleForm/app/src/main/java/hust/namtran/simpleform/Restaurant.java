@@ -1,25 +1,25 @@
 package hust.namtran.simpleform;
 
 /**
- * Created by namtran on 22/01/2016.
+ * Created by NamTX on 22/01/2016.
  */
 public class Restaurant {
-    private String name="";
-    private String address="";
+    private String name = "";
+    private String address = "";
 
     public String getName() {
-        return(name);
+        return (name);
     }
 
     public void setName(String name) {
-        this. name=name;
+        this.name = name;
     }
 
     public String getAddress() {
-        return(address);
+        return (address);
     }
 
     public void setAddress(String address) {
-        this. address=address;
+        this.address = address;
     }
 }

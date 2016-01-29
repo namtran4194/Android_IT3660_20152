@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BasicWidgetsRadioButton</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="left">Left</string>
+    <string name="center">Center</string>
+    <string name="right">Right</string>
+</resources>

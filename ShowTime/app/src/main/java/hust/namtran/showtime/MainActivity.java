@@ -1,15 +1,10 @@
 package hust.namtran.showtime;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +13,14 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
     Button btnDate;
     TextView time;
+    // Use of an anonymous inner class
+    private View.OnClickListener btProcess = new View.OnClickListener() {
+        public void onClick(View v) {
+            time = (TextView) findViewById(R.id.text);
+            time.setText(new Date().toString());
+            Toast.makeText(MainActivity.this, "Option 2: Use of an anonymous inner class", Toast.LENGTH_LONG).show();
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,17 +48,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Use of an anonymous inner class
-    private View.OnClickListener btProcess = new View.OnClickListener(){
-        public void onClick(View v){
-            time = (TextView) findViewById(R.id.text);
-            time.setText(new Date().toString());
-            Toast.makeText(MainActivity.this, "Option 2: Use of an anonymous inner class", Toast.LENGTH_LONG).show();
-        }
-    };
-
-    class ButtonListener implements View.OnClickListener{
-        public void onClick(View v){
+    class ButtonListener implements View.OnClickListener {
+        public void onClick(View v) {
             time = (TextView) findViewById(R.id.text);
             time.setText(new Date().toString());
             Toast.makeText(MainActivity.this, "Option 1: Creating new Listener class", Toast.LENGTH_LONG).show();
