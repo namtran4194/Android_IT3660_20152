@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
                 }
                 name.setText("");
                 address.setText("");
-                Toast.makeText(MainActivity.this, "Name: " + res_name + "\nAddress: " + res_address + "\nType: " + restaurant.getType(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Saved restaurant's information\n" + "Name: " + res_name + "\nAddress: " + res_address + "\nType: " + restaurant.getType(), Toast.LENGTH_LONG).show();
             }
         });
     }

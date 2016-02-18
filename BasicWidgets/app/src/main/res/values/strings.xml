@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Basic Widgets</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="left">Left</string>
+    <string name="center">Center</string>
+    <string name="right">Right</string>
+    <string name="btnRadio">Radio Button</string>
+    <string name="btnBack">Back</string>
+    <string name="btnCheckBox">CheckBox</string>
+    <string name="checkbox">This checkbox is:</string>
+    <string name="etHint">Type here…</string>
+    <string name="btnEditText">Edit Text</string>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListView Widget</string>
+    <string name="tvHint">No selected item</string>
+</resources>
