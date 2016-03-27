@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Labwork3</string>
+    <string name="save">save to intenal storage</string>
+    <string name="read">load from intenalstorag</string>
+</resources>
