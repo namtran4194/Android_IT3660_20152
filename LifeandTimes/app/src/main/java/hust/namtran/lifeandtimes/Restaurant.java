@@ -1,4 +1,4 @@
-package hust.namtran.lifeandtimes;
+package com.example.awesome.demosql;
 
 /**
  * Created by NamTX on 22/02/2016.

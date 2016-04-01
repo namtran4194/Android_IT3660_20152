@@ -1,4 +1,4 @@
-package hust.namtran.lifeandtimes;
+package com.example.awesome.demosql;
 
 import android.app.TabActivity;
 import android.os.Bundle;
