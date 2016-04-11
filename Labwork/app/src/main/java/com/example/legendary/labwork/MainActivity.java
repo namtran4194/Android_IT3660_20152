@@ -50,6 +50,7 @@ public class MainActivity extends Activity {
             return;
         }
 
+        idView.setText("");
         etProductName.setText("");
         etQuantity.setText("");
         Toast.makeText(this, "Added", Toast.LENGTH_SHORT).show();
