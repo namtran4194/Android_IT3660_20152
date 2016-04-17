@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PhanMemQuanLyThuChi</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_khoan_chi">KhoanChi</string>
+    <string name="title_activity_khoan_thu">KhoanThu</string>
+    <string name="title_activity_khac">Khac</string>
+    <string name="title_activity_bao_cao_thu_chi">BaoCaoThuChi</string>
+    <string name="title_activity_doi_tien">DoiTien</string>
+    <string name="title_activity_lai_xuat">LaiXuatActivity</string>
+    <string name="title_activity_about">Thông tin project</string>
+
+</resources>
