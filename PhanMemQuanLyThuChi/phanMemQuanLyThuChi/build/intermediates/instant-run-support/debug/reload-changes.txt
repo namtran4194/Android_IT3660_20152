@@ -1,0 +1,2 @@
+CHANGED,C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\example\phanmemquanlythuchi\MainActivity$1$2$override.class

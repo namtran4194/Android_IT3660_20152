@@ -1,0 +1,148 @@
+[
+    {
+        "outputFile": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\src\\main\\res\\values\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 55,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\src\\main\\res\\values\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endColumn": 55,
+                    "endOffset": 220
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\src\\main\\res\\values\\ids.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 225,
+                    "endColumn": 54,
+                    "endOffset": 275
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\src\\main\\res\\values\\ids.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 280,
+                    "endColumn": 53,
+                    "endOffset": 329
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\src\\main\\res\\values\\ids.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 334,
+                    "endColumn": 52,
+                    "endOffset": 382
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 387,
+                    "endColumn": 53,
+                    "endOffset": 436
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 53,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 441,
+                    "endColumn": 52,
+                    "endOffset": 489
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\build\\intermediates\\exploded-aar\\PhanMemQuanLyThuChi\\library_zhy_CircleMenu\\unspecified\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 494,
+                    "endLine": 16,
+                    "endColumn": 12,
+                    "endOffset": 780
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 785,
+                    "endLine": 19,
+                    "endColumn": 12,
+                    "endOffset": 940
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 945,
+                    "endColumn": 51,
+                    "endOffset": 992
+                },
+                "from": {
+                    "file": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\phanMemQuanLyThuChi\\src\\main\\res\\values\\styles.xml"
+                }
+            }
+        ]
+    }
+]

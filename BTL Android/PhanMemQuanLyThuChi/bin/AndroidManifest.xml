@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="18"
+        android:minSdkVersion="16"
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,11 +14,10 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="Quản Lý Thu Chi"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="example.phanmemquanlythuchi.MainActivity"
-            android:label="Quản lý thu chi" >
+            android:name="example.phanmemquanlythuchi.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,27 +27,27 @@
         <activity
             android:name="example.phanmemquanlythuchi.Tienchi"
             android:label="Ghi chép chi tiêu"
-            android:parentActivityName="MainActivity_ThuChi" >
+            android:parentActivityName="example.phanmemquanlythuchi.MainActivity" >
         </activity>
         <activity
             android:name="example.phanmemquanlythuchi.TienThu"
             android:label="Ghi chép thu nhập"
-            android:parentActivityName="MainActivity_ThuChi" >
+            android:parentActivityName="example.phanmemquanlythuchi.MainActivity" >
         </activity>
         <activity
             android:name="example.phanmemquanlythuchi.DanhSachThuChi"
             android:label="Danh sách thu chi"
-            android:parentActivityName="MainActivity_ThuChi" >
+            android:parentActivityName="example.phanmemquanlythuchi.MainActivity" >
         </activity>
         <activity
             android:name="example.phanmemquanlythuchi.BaoCaoThuChi"
             android:label="Thống kê - Biểu đồ"
-            android:parentActivityName="MainActivity_ThuChi" >
+            android:parentActivityName="example.phanmemquanlythuchi.MainActivity" >
         </activity>
         <activity
             android:name="example.phanmemquanlythuchi.NgoaiTe"
             android:label="Quy đổi tiền tệ"
-            android:parentActivityName="MainActivity_ThuChi" >
+            android:parentActivityName="example.phanmemquanlythuchi.MainActivity" >
         </activity>
         <activity
             android:name="org.achartengine.GraphicalActivity"
@@ -57,12 +56,13 @@
         <activity
             android:name="example.phanmemquanlythuchi.LaiXuat"
             android:label="Lãi xuất ngân hàng"
-            android:parentActivityName="MainActivity_ThuChi" >
+            android:parentActivityName="example.phanmemquanlythuchi.MainActivity" >
         </activity>
-        <activity
+       <activity
             android:name="example.phanmemquanlythuchi.CircleActivity"
             android:label="MENU" >
         </activity>
+        
     </application>
 
 </manifest>

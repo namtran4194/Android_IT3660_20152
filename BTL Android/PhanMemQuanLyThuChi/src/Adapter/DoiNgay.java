@@ -7,69 +7,66 @@ import java.util.Comparator;
 import Object.BaoCao;
 import Object.TienThuChi;
 
-public class DoiNgay {
-	public String doiDate(String date) {
-		String str = date.substring(6);
-		String str1 = date.substring(3, 5);
-		String str2 = date.substring(0, 2);
-		String kq = str + str1 + str2;
+
+public class DoiNgay{
+	public String doiDate(String date){
+		String str=date.substring(6);
+		String str1=date.substring(3,5);
+		String str2=date.substring(0,2);
+		String kq=str+str1+str2;
 		return kq;
 	}
-
-	public String doiThang(String date) {
-		String str = date.substring(6);
-		String str1 = date.substring(3, 5);
-		String kq = str + str1;
+	public String doiThang(String date){
+		String str=date.substring(6);
+		String str1=date.substring(3,5);
+		String kq=str+str1;
 		return kq;
 	}
-
-	public String doiThang1(String date) {
-		String str = date.substring(0, 4);
-		String str1 = date.substring(4, 6);
-		String kq = str + str1;
+	public String doiThang1(String date){
+		String str=date.substring(0,4);
+		String str1=date.substring(4,6);
+		String kq=str+str1;
 		return kq;
 	}
-
-	public String doiNam(String date) {
-		String str = date.substring(6);
-		String kq = str;
+	public String doiNam(String date){
+		String str=date.substring(6);
+		String kq=str;
 		return kq;
 	}
-
-	public String doiNam1(String date) {
-		String str = date.substring(0, 4);
-		String kq = str;
+	public String doiNam1(String date){
+		String str=date.substring(0,4);
+		String kq=str;
 		return kq;
 	}
-
-	public String ngay(String string) {
-		String chuoi = string.substring(6) + "/" + string.substring(4, 6) + "/" + string.substring(0, 4);
+	
+	public String ngay(String string){
+		String chuoi=string.substring(6)+"/"+string.substring(4, 6)+"/"+string.substring(0, 4);
 		return chuoi;
-
+		
 	}
-
-	public String thang(String string) {
-		String chuoi = string.substring(4, 6) + "/" + string.substring(0, 4);
+	
+	public String thang(String string){
+		String chuoi=string.substring(4, 6)+"/"+string.substring(0, 4);
 		return chuoi;
-
+		
 	}
-
-	public String nam(String string) {
-		String chuoi = string.substring(0, 4);
+	public String nam(String string){
+		String chuoi=string.substring(0, 4);
 		return chuoi;
-
+		
 	}
-
-	public ArrayList<TienThuChi> sapXep(ArrayList<TienThuChi> arrinfo) {
+	public ArrayList<TienThuChi> sapXep(ArrayList<TienThuChi> arrinfo){
 		Collections.sort(arrinfo, new Comparator<TienThuChi>() {
 			@Override
 			public int compare(TienThuChi lhs, TienThuChi rhs) {
-				if (Float.parseFloat(lhs.getNgaythang()) < Float.parseFloat(rhs.getNgaythang())) {
+				// TODO Auto-generated method stub
+				if(Float.parseFloat(lhs.getNgaythang())<Float.parseFloat(rhs.getNgaythang())){
 					return 1;
-				} else {
-					if (Float.parseFloat(lhs.getNgaythang()) == Float.parseFloat(rhs.getNgaythang())) {
+				}
+				else{
+					if(Float.parseFloat(lhs.getNgaythang()) == Float.parseFloat(rhs.getNgaythang())){
 						return 0;
-					} else {
+					}else {
 						return -1;
 					}
 				}
@@ -77,17 +74,18 @@ public class DoiNgay {
 		});
 		return arrinfo;
 	}
-
 	public ArrayList<BaoCao> sapXep1(ArrayList<BaoCao> arrchi) {
 		Collections.sort(arrchi, new Comparator<BaoCao>() {
 			@Override
 			public int compare(BaoCao lhs, BaoCao rhs) {
-				if (Float.parseFloat(lhs.getNgay()) < Float.parseFloat(rhs.getNgay())) {
+				// TODO Auto-generated method stub
+				if(Float.parseFloat(lhs.getNgay())<Float.parseFloat(rhs.getNgay())){
 					return 1;
-				} else {
-					if (Float.parseFloat(lhs.getNgay()) == Float.parseFloat(rhs.getNgay())) {
+				}
+				else{
+					if(Float.parseFloat(lhs.getNgay()) == Float.parseFloat(rhs.getNgay())){
 						return 0;
-					} else {
+					}else {
 						return -1;
 					}
 				}
@@ -95,17 +93,19 @@ public class DoiNgay {
 		});
 		return arrchi;
 	}
-
+	
 	public ArrayList<BaoCao> sapXepnam(ArrayList<BaoCao> arrhientai) {
 		Collections.sort(arrhientai, new Comparator<BaoCao>() {
 			@Override
 			public int compare(BaoCao lhs, BaoCao rhs) {
-				if (Float.parseFloat(lhs.getNgay()) < Float.parseFloat(rhs.getNgay())) {
+				// TODO Auto-generated method stub
+				if(Float.parseFloat(lhs.getNgay())<Float.parseFloat(rhs.getNgay())){
 					return 1;
-				} else {
-					if (Float.parseFloat(lhs.getNgay()) == Float.parseFloat(rhs.getNgay())) {
+				}
+				else{
+					if(Float.parseFloat(lhs.getNgay()) == Float.parseFloat(rhs.getNgay())){
 						return 0;
-					} else {
+					}else {
 						return -1;
 					}
 				}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="513708346715784" >
+
+    <task
+        name="javac"
+        duration="1381" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="77" />
+    <task
+        name="verifier"
+        duration="9" />
+
+    <artifact
+        location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+        type="DEX" />
+
+    <build timestamp="513537755655731" >
+        <artifact
+            location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\build\outputs\apk\phanMemQuanLyThuChi-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="513708346715784" >
+        <artifact
+            location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>

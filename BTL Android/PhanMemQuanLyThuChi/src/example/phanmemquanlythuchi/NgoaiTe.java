@@ -33,6 +33,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
@@ -54,7 +56,7 @@ public class NgoaiTe extends Activity {
 	dbChi dbchi;
 	SQLiteDatabase mDbchi;
 	Cursor mCursorchi;
-	// private SimpleCursorAdapter mAdapterchi;
+	private SimpleCursorAdapter mAdapterchi;
 
 	private TienThuChi objectthu, objectchi;
 	private ArrayList<TienThuChi> arrthu = null;
@@ -72,42 +74,47 @@ public class NgoaiTe extends Activity {
 	public Context context = this;
 
 	// sua thu
-	public String gomtheothang(String nhom, String thang, ArrayList<TienThuChi> a) {
+	public String gomtheothang(String nhom, String thang,
+			ArrayList<TienThuChi> a) {
 		String tong = "";
 
 		return tong;
 	}
 
-	// private EditText suatenthu;
-	// private EditText suatienthu;
-	// private Spinner suanhomthu;
+	private EditText suatenthu;
+	private EditText suatienthu;
+	private Spinner suanhomthu;
 	private TextView suangaythu;
-	// private EditText suaghichuthu;
-	// private ImageButton btnsavethu, btnsuangaythu;
+	private EditText suaghichuthu;
+	private ImageButton btnsavethu, btnsuangaythu;
 	private String datetimesuathu = "";
-	// private String[] arrspinnerthu = { "Tiền Lương", "Đòi Nợ", "Bán Đồ", "Đi
-	// Vay", "Khác" };
+	private String[] arrspinnerthu = { "Tiền Lương", "Đòi Nợ", "Bán Đồ",
+			"Đi Vay", "Khác" };
 	ArrayAdapter<String> adapterthu = null;
 
 	// sua chi
-	// private EditText suatenchi;
-	// private EditText suatienchi;
-	// private Spinner suanhomchi;
+	@SuppressWarnings("unused")
+	private EditText suatenchi;
+	private EditText suatienchi;
+	private Spinner suanhomchi;
 	private TextView suangaychi;
-	// private EditText suaghichuchi;
-	// private ImageButton btnsavechi, btnsuangaychi;
+	private EditText suaghichuchi;
+	private ImageButton btnsavechi, btnsuangaychi;
 	private String datetimesuachi = "";
-	// private String[] arrspinnerchi = { "Ăn Uống", "Quần Áo", "Cho vay", "Sinh
-	// Hoạt", "Đi Lại", "Trả Nợ", "Khác" };
+	private String[] arrspinnerchi = { "Ăn Uống", "Quần Áo",
+			"Cho vay", "Sinh Hoạt", "Đi Lại", "Trả Nợ", "Khác" };
 	ArrayAdapter<String> adapterchi = null;
 
-	final static String[] NAME_MONEY = { "US Dollar (USD)", "Euro (EUR)", "British Pound (GBD)",
-			"HongKong Dollar (HKD)", "Japan Yen (JPY)", "South Korean Won (KRW)", "Indian RUPEE (INR)",
-			"Kuwaiti Dinar (KWD)", "Swiss France (CHF)", "Austraylia Dollar (AUD)", "Malaysian Ringgit (MYR)",
-			"Russian Ruble (RUB)", "Singapore Dollar (SGD)", "Thai Baht (THB)", "Canadian Dollar (CAD)",
-			"Saudi Rial (SAR)" };
-	final static String[] KH_MONEY = { "USD", "EUR", "GBP", "HKD", "JPY", "KRW", "INR", "KWD", "CHF", "AUD", "MYR",
-			"RUB", "SGD", "THB", "CAD", "SAR" };
+	final static String[] NAME_MONEY = { "US Dollar (USD)", "Euro (EUR)",
+			"British Pound (GBD)", "HongKong Dollar (HKD)", "Japan Yen (JPY)",
+			"South Korean Won (KRW)", "Indian RUPEE (INR)",
+			"Kuwaiti Dinar (KWD)", "Swiss France (CHF)",
+			"Austraylia Dollar (AUD)", "Malaysian Ringgit (MYR)",
+			"Russian Ruble (RUB)", "Singapore Dollar (SGD)", "Thai Baht (THB)",
+			"Canadian Dollar (CAD)", "Saudi Rial (SAR)" };
+	final static String[] KH_MONEY = { "USD", "EUR", "GBP", "HKD", "JPY",
+			"KRW", "INR", "KWD", "CHF", "AUD", "MYR", "RUB", "SGD", "THB",
+			"CAD", "SAR" };
 	DanhSachTienTe adapterdstien;
 	ArrayAdapter<String> adaptertien = null;
 	Spinner spinnertien;
@@ -115,30 +122,37 @@ public class NgoaiTe extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_doitien);
-
+		
 		listthu = (ListView) findViewById(R.id.listView_danhsachkhoanthu);
 		listchi = (ListView) findViewById(R.id.listView_danhsachkhoanchi);
 		spinnertien = (Spinner) findViewById(R.id.spinner_danhsachloaitien);
 		txttygia = (TextView) findViewById(R.id.textView_tygia);
-		adaptertien = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, NAME_MONEY);
+		adaptertien = new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1, NAME_MONEY);
 		spinnertien.setAdapter(adaptertien);
-		if (checkConn()) {
+		if(checkConn()){
 			spinnertien.setOnItemSelectedListener(new OnItemSelectedListener() {
 
 				@Override
-				public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				public void onItemSelected(AdapterView<?> parent, View view,
+						int position, long id) {
 
-					new LoadDataTask(example.phanmemquanlythuchi.NgoaiTe.this, position).execute();
+					new LoadDataTask(
+							example.phanmemquanlythuchi.NgoaiTe.this,
+							position).execute();
 				}
 
 				@Override
 				public void onNothingSelected(AdapterView<?> parent) {
+					// TODO Auto-generated method stub
 				}
 			});
-		} else {
-			AlertDialog.Builder a = new AlertDialog.Builder(example.phanmemquanlythuchi.NgoaiTe.this);
+		}
+		else {
+			AlertDialog.Builder a= new AlertDialog.Builder(example.phanmemquanlythuchi.NgoaiTe.this);
 			a.setTitle("Kiểm tra kết nối");
 			a.setMessage("Không có kết nối Internet");
 			a.setNegativeButton("OK", null);
@@ -153,20 +167,20 @@ public class NgoaiTe extends Activity {
 		danhSachChi();
 
 	}
-
 	public void init() {
-
+		
 	}
 
 	public void loadSpin(int position) {
-		if (checkConn()) {
+		if(checkConn()){
 			TienThuChi khoantien = new TienThuChi();
 			txttygia.setText(khoantien.getTyGia(KH_MONEY[position]));
 			myadapterthu.vietBua(KH_MONEY[position]);
 			myadapterthu.notifyDataSetChanged();
 			myadapterchi.vietBua(KH_MONEY[position]);
 			myadapterchi.notifyDataSetChanged();
-		} else {
+		}
+		else {
 			TienThuChi khoantien = new TienThuChi();
 			txttygia.setText("");
 			myadapterthu.vietBua("VND");
@@ -178,10 +192,12 @@ public class NgoaiTe extends Activity {
 
 	public boolean checkConn() {
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-		StrictMode.setThreadPolicy(policy);
+	    StrictMode.setThreadPolicy(policy);
 		ConnectivityManager managerConn = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
-		NetworkInfo inforWIFI = managerConn.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
-		NetworkInfo inforMOBILE = managerConn.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+		NetworkInfo inforWIFI = managerConn
+				.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+		NetworkInfo inforMOBILE = managerConn
+				.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
 		if (inforWIFI != null && inforMOBILE != null) {
 			if (!inforWIFI.isConnected() && !inforMOBILE.isConnected()) {
 				return false;
@@ -216,7 +232,8 @@ public class NgoaiTe extends Activity {
 	}
 
 	@SuppressLint({ "ValidFragment", "NewApi" })
-	public class DatePickerFragmentchi extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+	public class DatePickerFragmentchi extends DialogFragment implements
+			DatePickerDialog.OnDateSetListener {
 
 		@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 		@Override
@@ -231,23 +248,29 @@ public class NgoaiTe extends Activity {
 		}
 
 		@Override
+		@SuppressWarnings("deprecation")
 		public void onDateSet(DatePicker view, int year, int month, int day) {
 			// Do something with the date chosen by the user
 			month = month + 1;
 			if (day < 10) {
 				if (month < 10) {
-					datetimesuachi = "0" + String.valueOf(day) + "/" + "0" + String.valueOf(month) + "/"
+					datetimesuachi = "0" + String.valueOf(day) + "/" + "0"
+							+ String.valueOf(month) + "/"
 							+ String.valueOf(year);
 				} else {
-					datetimesuachi = "0" + String.valueOf(day) + "/" + String.valueOf(month) + "/"
+					datetimesuachi = "0" + String.valueOf(day) + "/"
+							+ String.valueOf(month) + "/"
 							+ String.valueOf(year);
 				}
 			} else {
 				if (month < 10) {
-					datetimesuachi = String.valueOf(day) + "/" + "0" + String.valueOf(month) + "/"
+					datetimesuachi = String.valueOf(day) + "/" + "0"
+							+ String.valueOf(month) + "/"
 							+ String.valueOf(year);
 				} else {
-					datetimesuachi = String.valueOf(day) + "/" + String.valueOf(month) + "/" + String.valueOf(year);
+					datetimesuachi = String.valueOf(day) + "/"
+							+ String.valueOf(month) + "/"
+							+ String.valueOf(year);
 				}
 			}
 			suangaychi.setText(datetimesuachi);
@@ -262,7 +285,8 @@ public class NgoaiTe extends Activity {
 	}
 
 	@SuppressLint({ "ValidFragment", "NewApi" })
-	public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+	public class DatePickerFragment extends DialogFragment implements
+			DatePickerDialog.OnDateSetListener {
 
 		@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 		@Override
@@ -277,23 +301,29 @@ public class NgoaiTe extends Activity {
 		}
 
 		@Override
+		@SuppressWarnings("deprecation")
 		public void onDateSet(DatePicker view, int year, int month, int day) {
 			// Do something with the date chosen by the user
 			month = month + 1;
 			if (day < 10) {
 				if (month < 10) {
-					datetimesuathu = "0" + String.valueOf(day) + "/" + "0" + String.valueOf(month) + "/"
+					datetimesuathu = "0" + String.valueOf(day) + "/" + "0"
+							+ String.valueOf(month) + "/"
 							+ String.valueOf(year);
 				} else {
-					datetimesuathu = "0" + String.valueOf(day) + "/" + String.valueOf(month) + "/"
+					datetimesuathu = "0" + String.valueOf(day) + "/"
+							+ String.valueOf(month) + "/"
 							+ String.valueOf(year);
 				}
 			} else {
 				if (month < 10) {
-					datetimesuathu = String.valueOf(day) + "/" + "0" + String.valueOf(month) + "/"
+					datetimesuathu = String.valueOf(day) + "/" + "0"
+							+ String.valueOf(month) + "/"
 							+ String.valueOf(year);
 				} else {
-					datetimesuathu = String.valueOf(day) + "/" + String.valueOf(month) + "/" + String.valueOf(year);
+					datetimesuathu = String.valueOf(day) + "/"
+							+ String.valueOf(month) + "/"
+							+ String.valueOf(year);
 				}
 			}
 			suangaythu.setText(datetimesuathu);
@@ -331,7 +361,8 @@ public class NgoaiTe extends Activity {
 				objectthu.setTen(mCursorthu.getString(1));
 				objectthu.setTien(mCursorthu.getString(2));
 				objectthu.setNhom(mCursorthu.getString(3));
-				objectthu.setNgaythang(doingaythu.doiDate(mCursorthu.getString(4)));
+				objectthu.setNgaythang(doingaythu.doiDate(mCursorthu
+						.getString(4)));
 				objectthu.setGhichu(mCursorthu.getString(5));
 				arrthu.add(objectthu);
 			} while (mCursorthu.moveToNext());
@@ -342,7 +373,8 @@ public class NgoaiTe extends Activity {
 			String strsapxep = doingaythu.ngay(sapxepthu.get(i).getNgaythang());
 			sapxepthu.get(i).setNgaythang(strsapxep);
 		}
-		myadapterthu = new DanhSachTienTe(this, R.layout.t_customlayout, sapxepthu);
+		myadapterthu = new DanhSachTienTe(this,
+				R.layout.t_customlayout, sapxepthu);
 		listthu.setAdapter(myadapterthu);
 	}
 
@@ -359,7 +391,8 @@ public class NgoaiTe extends Activity {
 				objectchi.setTen(mCursorchi.getString(1));
 				objectchi.setTien(mCursorchi.getString(2));
 				objectchi.setNhom(mCursorchi.getString(3));
-				objectchi.setNgaythang(doingaychi.doiDate(mCursorchi.getString(4)));
+				objectchi.setNgaythang(doingaychi.doiDate(mCursorchi
+						.getString(4)));
 				objectchi.setGhichu(mCursorchi.getString(5));
 				arrchi.add(objectchi);
 			} while (mCursorchi.moveToNext());
@@ -370,7 +403,8 @@ public class NgoaiTe extends Activity {
 			String strsapxep = doingaychi.ngay(sapxepchi.get(i).getNgaythang());
 			sapxepchi.get(i).setNgaythang(strsapxep);
 		}
-		myadapterchi = new DanhSachTienTeChi(this, R.layout.t_customlayout_chi, sapxepchi);
+		myadapterchi = new DanhSachTienTeChi(this,
+				R.layout.t_customlayout_chi, sapxepchi);
 		listchi.setAdapter(myadapterchi);
 	}
 
@@ -420,7 +454,7 @@ public class NgoaiTe extends Activity {
 
 		@Override
 		protected void onPostExecute(Void aVoid) {
-
+			
 			progressDialog.dismiss();
 			loadSpin(postion);
 		}

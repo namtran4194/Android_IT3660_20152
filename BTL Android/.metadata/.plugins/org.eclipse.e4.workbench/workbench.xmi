@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_yFDvUQMWEeaQrJ0W3cFHZA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_yFDvUgMWEeaQrJ0W3cFHZA" bindingContexts="_yFDvVAMWEeaQrJ0W3cFHZA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;main_activity__thu_chi.xml&quot; tooltip=&quot;PhanMemQuanLyThuChi/res/menu/main_activity__thu_chi.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/res/menu/main_activity__thu_chi.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TienThu.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/example/phanmemquanlythuchi/TienThu.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/example/phanmemquanlythuchi/TienThu.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.manifest.ManifestEditor&quot; name=&quot;AndroidManifest.xml&quot; tooltip=&quot;PhanMemQuanLyThuChi/AndroidManifest.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/AndroidManifest.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;R.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/gen/example/phanmemquanlythuchi/R.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/gen/example/phanmemquanlythuchi/R.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Menu_adapter.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Adapter/Menu_adapter.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Adapter/Menu_adapter.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;project.properties&quot; tooltip=&quot;PhanMemQuanLyThuChi/project.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/project.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;lint.xml&quot; tooltip=&quot;PhanMemQuanLyThuChi/lint.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/lint.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;styles.xml&quot; tooltip=&quot;PhanMemQuanLyThuChi/res/values/styles.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/res/values/styles.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;about.xml&quot; tooltip=&quot;PhanMemQuanLyThuChi/res/menu/about.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/res/menu/about.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;bao_cao_thu_chi.xml&quot; tooltip=&quot;PhanMemQuanLyThuChi/res/menu/bao_cao_thu_chi.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/res/menu/bao_cao_thu_chi.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.manifest.ManifestEditor&quot; name=&quot;AndroidManifest.xml&quot; tooltip=&quot;PhanMemQuanLyThuChi/bin/AndroidManifest.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/bin/AndroidManifest.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TienThuChi.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Object/TienThuChi.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Object/TienThuChi.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NgoaiTe.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Object/NgoaiTe.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Object/NgoaiTe.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Laixuat.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Object/Laixuat.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Object/Laixuat.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HTMLParser.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Object/HTMLParser.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Object/HTMLParser.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.manifest.ManifestEditor&quot; name=&quot;AndroidManifest.xml&quot; tooltip=&quot;MainActivity/AndroidManifest.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MainActivity/AndroidManifest.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.manifest.ManifestEditor&quot; name=&quot;AndroidManifest.xml&quot; tooltip=&quot;PhanMemQuanLyThuChi/AndroidManifest.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/AndroidManifest.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DoiNgay.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Adapter/DoiNgay.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Adapter/DoiNgay.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Menu_adapter.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Adapter/Menu_adapter.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Adapter/Menu_adapter.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DanhSachTienTeChi.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Adapter/DanhSachTienTeChi.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Adapter/DanhSachTienTeChi.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DanhSachTienTe.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Adapter/DanhSachTienTe.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Adapter/DanhSachTienTe.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DanhSachChi.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Adapter/DanhSachChi.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Adapter/DanhSachChi.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BaoCaoThang.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Adapter/BaoCaoThang.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Adapter/BaoCaoThang.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BaoCaoQuy.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Adapter/BaoCaoQuy.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Adapter/BaoCaoQuy.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BaoCaoNam.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Adapter/BaoCaoNam.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Adapter/BaoCaoNam.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Baocaohientai.java&quot; tooltip=&quot;PhanMemQuanLyThuChi/src/Adapter/Baocaohientai.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/src/Adapter/Baocaohientai.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.manifest.ManifestEditor&quot; name=&quot;AndroidManifest.xml&quot; tooltip=&quot;library_zhy_CircleMenu/AndroidManifest.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/library_zhy_CircleMenu/AndroidManifest.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.manifest.ManifestEditor&quot; name=&quot;AndroidManifest.xml&quot; tooltip=&quot;PhanMemQuanLyThuChi/bin/AndroidManifest.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/bin/AndroidManifest.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;strings.xml&quot; tooltip=&quot;PhanMemQuanLyThuChi/res/values/strings.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/PhanMemQuanLyThuChi/res/values/strings.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_yFDvUgMWEeaQrJ0W3cFHZA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_zgmgQQMWEeaQrJ0W3cFHZA" label="%trimmedwindow.label.eclipseSDK" x="78" y="78" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_yFDvUgMWEeaQrJ0W3cFHZA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_zgmgQQMWEeaQrJ0W3cFHZA" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -191,7 +191,7 @@
             <children xsi:type="basic:PartSashContainer" xmi:id="_wpI6jQRAEeaVysKhJssQgg" containerData="7684" selectedElement="_wpI6jgRAEeaVysKhJssQgg">
               <children xsi:type="basic:PartSashContainer" xmi:id="_wpI6jgRAEeaVysKhJssQgg" containerData="7500" selectedElement="_wpI6jwRAEeaVysKhJssQgg" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_wpI6jwRAEeaVysKhJssQgg" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_06KUMAMWEeaQrJ0W3cFHZA"/>
-                <children xsi:type="basic:PartSashContainer" xmi:id="_wpI6kARAEeaVysKhJssQgg" containerData="2500">
+                <children xsi:type="basic:PartSashContainer" xmi:id="_wpI6kARAEeaVysKhJssQgg" containerData="2500" selectedElement="_wpI6kwRAEeaVysKhJssQgg">
                   <children xsi:type="basic:PartStack" xmi:id="_wpI6kQRAEeaVysKhJssQgg" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack" toBeRendered="false" containerData="5000">
                     <children xsi:type="advanced:Placeholder" xmi:id="_wpI6kgRAEeaVysKhJssQgg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" toBeRendered="false" ref="_1AYQ8QMWEeaQrJ0W3cFHZA"/>
                   </children>
@@ -205,6 +205,8 @@
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_wpI6lwRAEeaVysKhJssQgg" elementId="bottom" containerData="2500" selectedElement="_wpI6nARAEeaVysKhJssQgg">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
+                <tags>General</tags>
+                <tags>Android</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_wpI6mARAEeaVysKhJssQgg" elementId="org.eclipse.ui.views.ProblemView" toBeRendered="false" ref="_1AXp4AMWEeaQrJ0W3cFHZA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_wpI6mQRAEeaVysKhJssQgg" elementId="org.eclipse.jdt.ui.JavadocView" toBeRendered="false" ref="_woyVMARAEeaVysKhJssQgg"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_wpI6mgRAEeaVysKhJssQgg" elementId="org.eclipse.jdt.ui.SourceView" toBeRendered="false" ref="_woy8QARAEeaVysKhJssQgg"/>
@@ -213,6 +215,8 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_wpI6nQRAEeaVysKhJssQgg" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_1AXp4wMWEeaQrJ0W3cFHZA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_wpI6ngRAEeaVysKhJssQgg" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_1AXp5AMWEeaQrJ0W3cFHZA"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_wpI6nwRAEeaVysKhJssQgg" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" toBeRendered="false" ref="_wpHFUARAEeaVysKhJssQgg"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_Y0YYUASiEea945Pw9b0YoA" elementId="org.eclipse.ui.views.PropertySheet" toBeRendered="false" ref="_1AV0sAMWEeaQrJ0W3cFHZA"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_wtQwMAebEea8hIXhGSMaDw" elementId="com.android.ide.eclipse.ddms.views.LogCatView" toBeRendered="false" ref="_wtQJIAebEea8hIXhGSMaDw"/>
               </children>
             </children>
           </children>
@@ -347,6 +351,11 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_1AXp5AMWEeaQrJ0W3cFHZA" elementId="org.eclipse.ui.views.ProgressView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Progress" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/pview.png" tooltip="" closeable="true">
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <menus xmi:id="_b04BcAXtEeae99fhPRMwlA" elementId="org.eclipse.ui.views.ProgressView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_b04BcQXtEeae99fhPRMwlA" elementId="org.eclipse.ui.views.ProgressView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_1AXp5QMWEeaQrJ0W3cFHZA" elementId="org.eclipse.search.ui.views.SearchView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Search" iconURI="platform:/plugin/org.eclipse.search/icons/full/eview16/searchres.gif" tooltip="" closeable="true">
       <tags>View</tags>
@@ -418,8 +427,14 @@
       <tags>categoryTag:Java</tags>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_wpHFUARAEeaVysKhJssQgg" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Terminal" iconURI="platform:/plugin/org.eclipse.tm.terminal.view.ui/icons/eview16/terminal_view.gif" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view>&#xD;&#xA;&lt;terminalConnections id=&quot;org.eclipse.tm.terminal.view.ui.TerminalsView&quot; pinned=&quot;false&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Terminal</tags>
+      <menus xmi:id="_bMSN8AeOEeaS9OgIS16-Bg" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_bMSN8QeOEeaS9OgIS16-Bg" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_wpHsYARAEeaVysKhJssQgg" elementId="org.eclipse.wb.core.StructureView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Structure" iconURI="platform:/plugin/org.eclipse.wb.core/icons/structure/properties_view.gif" tooltip="" closeable="true">
       <tags>View</tags>
@@ -429,6 +444,16 @@
       <tags>View</tags>
       <tags>categoryTag:WindowBuilder</tags>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_wtQJIAebEea8hIXhGSMaDw" elementId="com.android.ide.eclipse.ddms.views.LogCatView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="LogCat" iconURI="platform:/plugin/com.android.ide.eclipse.ddms/icons/logcat.png" tooltip="" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Android</tags>
+      <menus xmi:id="_wuTSAAebEea8hIXhGSMaDw" elementId="com.android.ide.eclipse.ddms.views.LogCatView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_wuTSAQebEea8hIXhGSMaDw" elementId="com.android.ide.eclipse.ddms.views.LogCatView" visible="false"/>
+    </sharedElements>
     <trimBars xmi:id="_zgz7oAMWEeaQrJ0W3cFHZA" elementId="org.eclipse.ui.main.toolbar">
       <children xsi:type="menu:ToolBar" xmi:id="_0QY-cAMWEeaQrJ0W3cFHZA" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -436,7 +461,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0QazoAMWEeaQrJ0W3cFHZA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_-GBqgARNEeaSsZjit39rQA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_yIPmPwMWEeaQrJ0W3cFHZA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_FZ9eMAebEea8hIXhGSMaDw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_yIPmPwMWEeaQrJ0W3cFHZA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0QbasAMWEeaQrJ0W3cFHZA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -478,7 +503,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0Qco0AMWEeaQrJ0W3cFHZA" elementId="org.eclipse.ui.workbench.navigate" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_-GIYMARNEeaSsZjit39rQA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_yIOYEgMWEeaQrJ0W3cFHZA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_FaEL4AebEea8hIXhGSMaDw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_yIOYEgMWEeaQrJ0W3cFHZA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0Qco0QMWEeaQrJ0W3cFHZA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -519,12 +544,24 @@
       <children xsi:type="menu:ToolControl" xmi:id="_u4gzcAMZEeaQrJ0W3cFHZA" elementId="topLeft(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
       </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_7BNvoAVTEeaj2dj9pYcioQ" elementId="left(org.eclipse.jdt.ui.JavaPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
     </trimBars>
     <trimBars xmi:id="_01gdsAMWEeaQrJ0W3cFHZA" elementId="org.eclipse.ui.trim.vertical2" toBeRendered="false" side="Right">
       <children xsi:type="menu:ToolControl" xmi:id="_u4oIMAMZEeaQrJ0W3cFHZA" elementId="topRight(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_u4x5MAMZEeaQrJ0W3cFHZA" elementId="org.eclipse.ui.editorss(org.eclipse.jst.j2ee.J2EEPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_7Bp0gAVTEeaj2dj9pYcioQ" elementId="right(org.eclipse.jdt.ui.JavaPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_7BxwUAVTEeaj2dj9pYcioQ" elementId="bottom(org.eclipse.jdt.ui.JavaPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_nzzvIAeOEeaS9OgIS16-Bg" elementId="org.eclipse.ui.editorss(org.eclipse.jdt.ui.JavaPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
       </children>
     </trimBars>
