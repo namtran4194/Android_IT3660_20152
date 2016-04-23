@@ -14,12 +14,12 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-public class Baocaohientai extends ArrayAdapter<BaoCao> {
+public class BaoCaoHienTai extends ArrayAdapter<BaoCao> {
     Context context;
     int layoutResourceId;
     ArrayList<BaoCao> listData = null;
 
-    public Baocaohientai(Context context, int layoutResourceId, ArrayList<BaoCao> data) {
+    public BaoCaoHienTai(Context context, int layoutResourceId, ArrayList<BaoCao> data) {
         super(context, layoutResourceId, data);
         this.context = context;
         this.layoutResourceId = layoutResourceId;

@@ -52,14 +52,14 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\src\main\AndroidManifest.xml:19:17-77
 	android:name
 		ADDED from C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\src\main\AndroidManifest.xml:19:27-74
-activity#example.phanmemquanlythuchi.Tienchi
+activity#example.phanmemquanlythuchi.TienChi
 ADDED from C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\src\main\AndroidManifest.xml:22:9-25:58
 	android:label
 		ADDED from C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\src\main\AndroidManifest.xml:24:13-46
 	android:parentActivityName
 		ADDED from C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\src\main\AndroidManifest.xml:25:13-55
 	android:name
-		ADDED from C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\src\main\AndroidManifest.xml:23:13-63
+		ADDED from C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\src\main\AndroidManifest.xml:23:13-36
 activity#example.phanmemquanlythuchi.TienThu
 ADDED from C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\src\main\AndroidManifest.xml:26:9-29:58
 	android:label

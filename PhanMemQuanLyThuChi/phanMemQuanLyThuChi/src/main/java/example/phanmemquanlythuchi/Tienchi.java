@@ -29,7 +29,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Tienchi extends Activity {
+public class TienChi extends Activity {
 
     EditText tenkhoanchi, sotienkhoanchi, ghichukhoanchi;
     Spinner nhomkhoanchi;
@@ -95,7 +95,7 @@ public class Tienchi extends Activity {
             @Override
             public void onClick(View v) {
                 if (sotienkhoanchi.getText().toString().isEmpty() || checkZero(sotienkhoanchi.getText().toString())) {
-                    Toast toast = Toast.makeText(Tienchi.this, "Bạn Chưa Nhập Tiền", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(TienChi.this, "Bạn Chưa Nhập Tiền", Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
                     ContentValues cv = new ContentValues(2);
@@ -108,7 +108,7 @@ public class Tienchi extends Activity {
                     tenkhoanchi.setText(null);
                     sotienkhoanchi.setText(null);
                     ghichukhoanchi.setText(null);
-                    Toast toast = Toast.makeText(Tienchi.this, "Nhập Thành Công", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(TienChi.this, "Nhập Thành Công", Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }

@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="example.phanmemquanlythuchi.Tienchi"
+            android:name=".TienChi"
             android:label="Ghi chép chi tiêu"
             android:parentActivityName=".MainActivity" />
         <activity

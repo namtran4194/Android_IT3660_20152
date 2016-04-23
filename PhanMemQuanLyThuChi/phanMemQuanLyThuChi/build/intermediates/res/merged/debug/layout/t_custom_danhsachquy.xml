@@ -20,9 +20,9 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thu-Chi:" />
+            android:text="Thu-Chi: " />
 
         <TextView
             android:id="@+id/textView_hieuthuchi"
@@ -41,9 +41,9 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="THU:" />
+            android:text="THU: " />
 
         <TextView
             android:id="@+id/textView_thuquy"
@@ -61,9 +61,9 @@
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CHI:" />
+            android:text="CHI: " />
 
         <TextView
             android:id="@+id/textView_chiquy"

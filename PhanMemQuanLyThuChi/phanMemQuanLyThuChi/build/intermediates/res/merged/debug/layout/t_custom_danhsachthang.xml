@@ -23,9 +23,9 @@
 
         <TextView
             android:id="@+id/textView_41"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="THÁNG:" />
+            android:text="THÁNG: " />
 
         <TextView
             android:id="@+id/textView_titlethang"
@@ -44,9 +44,9 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tiền Thu:" />
+            android:text="Tiền Thu: " />
 
         <TextView
             android:id="@+id/textView_tienthuthang"
@@ -65,9 +65,9 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tiền Chi:" />
+            android:text="Tiền Chi: " />
 
         <TextView
             android:id="@+id/textView_tienchithang"
@@ -85,9 +85,9 @@
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="THU-CHI:" />
+            android:text="THU-CHI: " />
 
         <TextView
             android:id="@+id/textView_tienduthang"

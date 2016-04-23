@@ -247,7 +247,7 @@ public class LaiXuat extends Activity {
                             } while (mCursorlaixuat.moveToNext());
                         }
                         xemnganhang.setText(arrngay.get(position).getTen());
-                        xemtien.setText(arrngay.get(position).getTien() + "-VND");
+                        xemtien.setText(arrngay.get(position).getTien() + " (VND)");
                         xemlaixuat.setText(arrngay.get(position).getLaixuat());
                         img_btn_kq.setOnClickListener(new OnClickListener() {
 
@@ -258,7 +258,7 @@ public class LaiXuat extends Activity {
                                     toast.show();
                                 } else {
                                     double d = kqLaiXuat(arrngay.get(position).getTien(), arrngay.get(position).getLaixuat(), edt_sothang.getText().toString());
-                                    tv_kq.setText(String.valueOf(d) + "-VND");
+                                    tv_kq.setText(String.valueOf(d) + " (VND)");
                                 }
                             }
                         });

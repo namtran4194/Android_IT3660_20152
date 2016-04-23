@@ -1,11 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
+    useLibrary("org.apache.http.legacy")
+}
+
+android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "locationapi.android.vogella.com.maps"
+        applicationId "com.vogella.android.locationapi.maps"
         minSdkVersion 17
         targetSdkVersion 23
         versionCode 1
@@ -20,7 +24,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
     compile 'com.android.support:appcompat-v7:23.3.0'
 }

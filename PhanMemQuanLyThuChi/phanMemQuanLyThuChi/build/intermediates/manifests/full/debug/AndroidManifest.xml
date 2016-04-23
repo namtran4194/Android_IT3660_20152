@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="example.phanmemquanlythuchi.Tienchi"
+            android:name="example.phanmemquanlythuchi.TienChi"
             android:label="Ghi chép chi tiêu"
             android:parentActivityName="example.phanmemquanlythuchi.MainActivity" />
         <activity

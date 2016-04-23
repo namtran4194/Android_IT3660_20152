@@ -3,7 +3,7 @@ package example.phanmemquanlythuchi;
 import java.util.ArrayList;
 
 
-import Adapter.Menu_adapter;
+import Adapter.Menu;
 import Database.dbChi;
 import Database.dbThu;
 import Object.BaoCao;
@@ -15,7 +15,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Toast;
@@ -51,7 +50,7 @@ public class MainActivity extends Activity {
         danhSachThu();
         danhSachChi();
         GridView grid = (GridView) findViewById(R.id.gridView_menu);
-        Menu_adapter adapter = new Menu_adapter(this, mItemTexts, mItemImgs);
+        Menu adapter = new Menu(this, mItemTexts, mItemImgs);
         grid.setAdapter(adapter);
         grid.setOnItemClickListener(new OnItemClickListener() {
 
@@ -62,7 +61,7 @@ public class MainActivity extends Activity {
                     Intent chuyen = new Intent(MainActivity.this, TienThu.class);
                     startActivity(chuyen);
                 } else if (position == 1) {
-                    Intent chuyen = new Intent(MainActivity.this, Tienchi.class);
+                    Intent chuyen = new Intent(MainActivity.this, TienChi.class);
                     startActivity(chuyen);
                 } else if (position == 2) {
                     Intent chuyen = new Intent(MainActivity.this, DanhSachThuChi.class);
@@ -107,7 +106,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main_activity_thu_chi, menu);
         return true;

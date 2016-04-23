@@ -126,15 +126,18 @@
 
         <TextView
             android:id="@+id/textViewsuachi9"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Ngày:"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
             android:id="@+id/textViewsuachi_ngaykhoanthu"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <ImageButton
             android:id="@+id/imageButtonsuachi_chonngaykhoanthu"
@@ -183,7 +186,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout5"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/iconsave"
         android:src="@drawable/iconsave" />
 

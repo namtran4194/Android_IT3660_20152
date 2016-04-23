@@ -165,9 +165,9 @@ public class NgoaiTe extends Activity {
         } else {
             TienThuChi khoantien = new TienThuChi();
             txttygia.setText("");
-            myadapterthu.vietBua("VND");
+            myadapterthu.vietBua("(VND)");
             myadapterthu.notifyDataSetChanged();
-            myadapterchi.vietBua("VND");
+            myadapterchi.vietBua("(VND)");
             myadapterchi.notifyDataSetChanged();
         }
     }

@@ -147,8 +147,7 @@ public class DanhSachThuChi extends Activity {
                                 cv.put(dbThu.COL_DATE, suangaythu.getText().toString());
                                 cv.put(dbThu.COL_NHOM, suanhomthu.getSelectedItem().toString());
                                 cv.put(dbThu.COL_GHICHU, suaghichuthu.getText().toString());
-                                mDbthu.update(dbThu.TABLE_NAME, cv, "_id " + "=" + sapxepthu.get(position).getId(),
-                                        null);
+                                mDbthu.update(dbThu.TABLE_NAME, cv, "_id " + "=" + sapxepthu.get(position).getId(), null);
                                 danhSachThu();
                                 mDbthu.close();
                                 dialogthu.cancel();

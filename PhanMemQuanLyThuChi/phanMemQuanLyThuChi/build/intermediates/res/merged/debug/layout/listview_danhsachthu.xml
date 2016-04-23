@@ -29,7 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/textView_nhomchi1"
-        android:text="NGÀY THÁNG" />
+        android:gravity="center"
+        android:text="NGÀY" />
 
     <TextView
         android:id="@+id/textView_tienchi1"

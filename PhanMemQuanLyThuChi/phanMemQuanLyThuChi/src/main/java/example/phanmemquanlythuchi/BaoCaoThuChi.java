@@ -14,7 +14,7 @@ import org.achartengine.renderer.SimpleSeriesRenderer;
 import Adapter.BaoCaoNam;
 import Adapter.BaoCaoQuy;
 import Adapter.BaoCaoThang;
-import Adapter.Baocaohientai;
+import Adapter.BaoCaoHienTai;
 import Adapter.DoiNgay;
 import Database.dbChi;
 import Database.dbThu;
@@ -62,7 +62,7 @@ public class BaoCaoThuChi extends Activity {
     BaoCao danhsach;
     BaoCao danhsachthang;
     BaoCao danhsachnam;
-    Baocaohientai adapterbaocaohientai;
+    BaoCaoHienTai adapterbaocaohientai;
     BaoCao objectchi2;
     TienThuChi objectthuchi;
     //Khai báo biến báo cáo tháng
@@ -146,7 +146,7 @@ public class BaoCaoThuChi extends Activity {
         baoCaoNgayHienTai();
         baoCaoThangHienTai();
         baoCaoNamHienTai();
-        adapterbaocaohientai = new Baocaohientai(this, R.layout.t_custom_danhsachhientai, arrhientai);
+        adapterbaocaohientai = new BaoCaoHienTai(this, R.layout.t_custom_danhsachhientai, arrhientai);
         listhientai.setAdapter(adapterbaocaohientai);
         //danh sach hien tai
         listhientai.setOnItemClickListener(new OnItemClickListener() {

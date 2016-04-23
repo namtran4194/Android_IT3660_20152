@@ -61,7 +61,7 @@
                     android:orientation="horizontal">
 
                     <include
-                        layout="@layout/listview_danhsachkhoanchi"
+                        layout="@layout/listview_danhsachchi"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent" />
                 </LinearLayout>

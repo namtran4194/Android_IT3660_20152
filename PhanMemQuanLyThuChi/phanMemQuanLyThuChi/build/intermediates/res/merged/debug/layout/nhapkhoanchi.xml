@@ -3,7 +3,6 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical">
 
     <TextView
@@ -83,6 +82,11 @@
             android:ems="10"
             android:hint="tiền chi"
             android:inputType="number" />
+        <TextView
+            android:id="@+id/tv_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VND" />
     </LinearLayout>
 
     <TextView
@@ -191,10 +195,9 @@
         android:id="@+id/imageButton_luukhoanchi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/linearLayout5"
-        android:layout_marginLeft="107dp"
-        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:background="@drawable/iconsave"
         android:src="@drawable/iconsave" />
 

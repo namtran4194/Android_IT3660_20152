@@ -81,7 +81,7 @@
             android:id="@+id/textView5"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Lãi xuất:"
+            android:text="Lãi xuất (%):"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
