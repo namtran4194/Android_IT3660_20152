@@ -6,6 +6,7 @@ import java.util.Locale;
 
 import Database.dbChi;
 
+import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
@@ -51,6 +52,7 @@ public class TienChi extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nhapkhoanchi);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         tenkhoanchi = (EditText) findViewById(R.id.editText_tenkhoanchi);
         sotienkhoanchi = (EditText) findViewById(R.id.editText_tienkhoanchi);

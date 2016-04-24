@@ -21,6 +21,7 @@ import Database.dbThu;
 import Object.BaoCao;
 import Object.TienThuChi;
 
+import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
@@ -113,6 +114,8 @@ public class BaoCaoThuChi extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_baocaothuchi);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         listhientai = (ListView) findViewById(R.id.listView_baocaohientai);
         arrhientai = new ArrayList<BaoCao>();
         dbthu = new dbThu(this);

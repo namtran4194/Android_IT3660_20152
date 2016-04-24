@@ -21,6 +21,7 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
@@ -114,6 +115,7 @@ public class NgoaiTe extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doitien);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         listthu = (ListView) findViewById(R.id.listView_danhsachkhoanthu);
         listchi = (ListView) findViewById(R.id.listView_danhsachkhoanchi);
@@ -261,7 +263,7 @@ public class NgoaiTe extends Activity {
             sapxepthu.get(i).setNgaythang(strsapxep);
         }
         myadapterthu = new DanhSachTienTe(this,
-                R.layout.t_customlayout, sapxepthu);
+                R.layout.t_customlayout_thu, sapxepthu);
         listthu.setAdapter(myadapterthu);
     }
 

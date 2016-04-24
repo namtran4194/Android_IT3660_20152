@@ -7,6 +7,7 @@ import java.util.Locale;
 
 import Object.Laixuat;
 
+import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
@@ -106,6 +107,8 @@ public class LaiXuat extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_laixuat);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         dblaixuat = new dbLaiXuat(this);
         mDblaixuat = dblaixuat.getWritableDatabase();
         ngaythang = (TextView) findViewById(R.id.editText_ngaylaixuat);

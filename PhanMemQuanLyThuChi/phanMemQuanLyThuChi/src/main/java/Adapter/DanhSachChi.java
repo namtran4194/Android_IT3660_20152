@@ -34,7 +34,6 @@ public class DanhSachChi extends ArrayAdapter<TienThuChi> {
 
     @Override
     public int getCount() {
-
         return this.listData.size();
     }
 

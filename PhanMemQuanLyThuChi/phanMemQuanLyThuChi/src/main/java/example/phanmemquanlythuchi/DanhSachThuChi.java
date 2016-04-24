@@ -22,6 +22,7 @@ import android.app.DialogFragment;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.pm.ActivityInfo;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
@@ -36,7 +37,6 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
 import android.widget.TabHost;
 import android.widget.TextView;
@@ -44,21 +44,20 @@ import android.widget.TextView;
 public class DanhSachThuChi extends Activity {
     public ArrayList<TienThuChi> sapxepthu = null;
     public ArrayList<TienThuChi> sapxepchi = null;
+    public ArrayAdapter<String> adapterthu = null;
+    public ArrayAdapter<String> adapterchi = null;
     public Context context = this;
+    // income
     dbThu dbthu;
     SQLiteDatabase mDbthu;
     Cursor mCursorthu;
-    SimpleCursorAdapter mAdapterthu;
+    private ListView listthu;
+    // expense
     dbChi dbchi;
     SQLiteDatabase mDbchi;
     Cursor mCursorchi;
-    ArrayAdapter<String> adapterthu = null;
-    ArrayAdapter<String> adapterchi = null;
-    //danh sach thu
-    private ListView listthu;
-    //danh sach chi
     private ListView listchi;
-    private SimpleCursorAdapter mAdapterchi;
+
     private TienThuChi objectthu, objectchi;
     private ArrayList<TienThuChi> arrthu = null;
     private ArrayList<TienThuChi> arrchi = null;
@@ -89,6 +88,7 @@ public class DanhSachThuChi extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.baocaothuchi);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         listthu = (ListView) findViewById(R.id.listView_danhsachkhoanthu);
         listchi = (ListView) findViewById(R.id.listView_danhsachkhoanchi);
@@ -114,12 +114,14 @@ public class DanhSachThuChi extends Activity {
                         dialogthu.setContentView(v);
                         dialogthu.setTitle("Sửa Khoản Thu");
                         dialogthu.show();
+                        // link to layout
                         suatenthu = (EditText) dialogthu.findViewById(R.id.editTextsuathu_tenkhoanthu);
                         suatienthu = (EditText) dialogthu.findViewById(R.id.editTextsuathu_tienkhoanthu);
                         suanhomthu = (Spinner) dialogthu.findViewById(R.id.spinnersuathu_nhomkhoanthu);
                         suangaythu = (TextView) dialogthu.findViewById(R.id.textViewsuathu_ngaykhoanthu);
                         suaghichuthu = (EditText) dialogthu.findViewById(R.id.editTextsuathu_ghichukhoanthu);
                         dexuat();
+                        // pick time
                         btnsuangaythu = (ImageButton) dialogthu.findViewById(R.id.imageButtonsuathu_chonngaykhoanthu);
                         btnsuangaythu.setOnClickListener(new OnClickListener() {
 
@@ -128,6 +130,7 @@ public class DanhSachThuChi extends Activity {
                                 showDatePickerDialog(null);
                             }
                         });
+                        // set value to dialog
                         mDbthu = dbthu.getWritableDatabase();
                         suatenthu.setText(sapxepthu.get(position).getTen());
                         suatienthu.setText(sapxepthu.get(position).getTien());
@@ -135,6 +138,8 @@ public class DanhSachThuChi extends Activity {
                         suaghichuthu.setText(sapxepthu.get(position).getGhichu());
                         adapterthu = new ArrayAdapter<String>(DanhSachThuChi.this, android.R.layout.simple_spinner_dropdown_item, arrspinnerthu);
                         suanhomthu.setAdapter(adapterthu);
+                        suanhomthu.setSelection(checkPosition(sapxepthu.get(position).getNhom(), arrspinnerthu));
+                        // save button
                         btnsavethu = (ImageButton) dialogthu.findViewById(R.id.imageButtonsuathu_luukhoanthu);
                         btnsavethu.setOnClickListener(new OnClickListener() {
 
@@ -142,11 +147,11 @@ public class DanhSachThuChi extends Activity {
                             @Override
                             public void onClick(View v) {
                                 ContentValues cv = new ContentValues();
-                                final String name = suatenthu.getText().toString();
-                                final String cost = suatienthu.getText().toString();
-                                final String date = suangaythu.getText().toString();
-                                final String type = suanhomthu.getSelectedItem().toString();
-                                final String note = suaghichuthu.getText().toString();
+                                String name = suatenthu.getText().toString();
+                                String cost = suatienthu.getText().toString();
+                                String date = suangaythu.getText().toString();
+                                String type = suanhomthu.getSelectedItem().toString();
+                                String note = suaghichuthu.getText().toString();
                                 cv.put(dbThu.COL_NAME, name);
                                 cv.put(dbThu.COL_TIEN, cost);
                                 cv.put(dbThu.COL_DATE, date);
@@ -164,7 +169,6 @@ public class DanhSachThuChi extends Activity {
                 b.setNegativeButton("Xóa", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
                         String id = sapxepthu.get(position).getId();
                         mDbthu.delete(dbThu.TABLE_NAME, "_id=?", new String[]{id});
                         danhSachThu();
@@ -190,12 +194,14 @@ public class DanhSachThuChi extends Activity {
                         dialogchi.setContentView(v);
                         dialogchi.setTitle("Sửa Khoản Chi");
                         dialogchi.show();
+                        // link to layout
                         suatenchi = (EditText) dialogchi.findViewById(R.id.editTextsuachi_tenkhoanthu);
                         suatienchi = (EditText) dialogchi.findViewById(R.id.editTextsuachi_tienkhoanthu);
                         suanhomchi = (Spinner) dialogchi.findViewById(R.id.spinnersuachi_nhomkhoanthu);
                         suangaychi = (TextView) dialogchi.findViewById(R.id.textViewsuachi_ngaykhoanthu);
                         suaghichuchi = (EditText) dialogchi.findViewById(R.id.editTextsuachi_ghichukhoanthu);
                         dexuatchi();
+                        // pick time
                         btnsuangaychi = (ImageButton) dialogchi.findViewById(R.id.imageButtonsuachi_chonngaykhoanthu);
                         btnsuangaychi.setOnClickListener(new OnClickListener() {
 
@@ -204,6 +210,7 @@ public class DanhSachThuChi extends Activity {
                                 showDatePickerDialogchi(null);
                             }
                         });
+                        // set value to dialog
                         mDbchi = dbchi.getWritableDatabase();
                         suatenchi.setText(sapxepchi.get(position).getTen());
                         suatienchi.setText(sapxepchi.get(position).getTien());
@@ -211,6 +218,8 @@ public class DanhSachThuChi extends Activity {
                         suaghichuchi.setText(sapxepchi.get(position).getGhichu());
                         adapterchi = new ArrayAdapter<String>(DanhSachThuChi.this, android.R.layout.simple_spinner_dropdown_item, arrspinnerchi);
                         suanhomchi.setAdapter(adapterchi);
+                        suanhomchi.setSelection(checkPosition(sapxepchi.get(position).getNhom(), arrspinnerchi));
+                        // save button
                         btnsavechi = (ImageButton) dialogchi.findViewById(R.id.imageButtonsuachi_luukhoanthu);
                         btnsavechi.setOnClickListener(new OnClickListener() {
 
@@ -243,6 +252,15 @@ public class DanhSachThuChi extends Activity {
                 b.create().show();
             }
         });
+    }
+
+    // find the position
+    public int checkPosition(String name, String[] array) {
+        int i = 0;
+        for (; i < array.length; i++)
+            if (array[i].equals(name))
+                break;
+        return i;
     }
 
     public void dexuat() {
@@ -327,7 +345,7 @@ public class DanhSachThuChi extends Activity {
             String strsapxep = doingaythu.ngay(sapxepthu.get(i).getNgaythang());
             sapxepthu.get(i).setNgaythang(strsapxep);
         }
-        myadapterthu = new DanhSachThu(this, R.layout.t_customlayout, sapxepthu);
+        myadapterthu = new DanhSachThu(this, R.layout.t_customlayout_thu, sapxepthu);
         listthu.setAdapter(myadapterthu);
     }
 
@@ -341,7 +359,6 @@ public class DanhSachThuChi extends Activity {
             do {
                 objectchi = new TienThuChi();
                 objectchi.setId(mCursorchi.getString(0));
-                System.out.println("id===)" + mCursorchi.getString(0));
                 objectchi.setTen(mCursorchi.getString(1));
                 objectchi.setTien(mCursorchi.getString(2));
                 objectchi.setNhom(mCursorchi.getString(3));

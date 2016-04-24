@@ -10,6 +10,7 @@ import Database.dbChi;
 import Database.dbThu;
 import Object.BaoCao;
 
+import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.app.Activity;
@@ -55,6 +56,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thuchi);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Firebase.setAndroidContext(this);
         root = new Firebase("https://expenseproject.firebaseio.com/");
         usersRef = root.child(Build.SERIAL);
@@ -105,8 +107,7 @@ public class MainActivity extends Activity {
                     exitDialog.setNegativeButton("Có", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            // finish();
-                            System.exit(1);
+                            finish();
                         }
                     });
                     exitDialog.setPositiveButton("Để sau", new DialogInterface.OnClickListener() {
