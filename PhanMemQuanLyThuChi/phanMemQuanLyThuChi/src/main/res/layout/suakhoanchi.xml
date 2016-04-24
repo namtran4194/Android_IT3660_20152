@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/textViewsuachi30">
+        android:layout_below="@+id/textViewsuachi30"
+        android:textAppearance="?android:attr/textAppearanceMedium">
 
         <TextView
             android:id="@+id/textViewsuachi31"
@@ -28,9 +29,8 @@
 
         <EditText
             android:id="@+id/editTextsuachi_tenkhoanthu"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
             android:hint="có thể để trống">
 
@@ -74,7 +74,8 @@
             android:id="@+id/textViewsuachi13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="VND" />
+            android:text="VND"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </LinearLayout>
 
@@ -104,7 +105,8 @@
         <Spinner
             android:id="@+id/spinnersuachi_nhomkhoanthu"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 
     <TextView
@@ -125,9 +127,8 @@
 
         <TextView
             android:id="@+id/textViewsuachi9"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Ngày:"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -136,6 +137,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <ImageButton
@@ -171,9 +173,8 @@
 
         <EditText
             android:id="@+id/editTextsuachi_ghichukhoanthu"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
             android:hint="có thể để trống" />
     </LinearLayout>

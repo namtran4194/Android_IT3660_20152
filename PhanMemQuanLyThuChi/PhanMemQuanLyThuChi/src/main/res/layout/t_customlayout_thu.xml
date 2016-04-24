@@ -14,30 +14,30 @@
 
         <TextView
             android:id="@+id/textView_tenkhoanthu_custom"
-            android:layout_width="100dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_weight="1"
             android:gravity="center" />
 
         <TextView
             android:id="@+id/textView_nhomkhoanthu_custom"
-            android:layout_width="60dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_weight="1"
             android:gravity="center" />
 
         <TextView
             android:id="@+id/textView_ngaykhoanthu_custom"
-            android:layout_width="90dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_weight="1"
             android:gravity="center" />
 
         <TextView
             android:id="@+id/textView_tienkhoanthu_custom"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_weight="1"
             android:gravity="center" />
 
     </LinearLayout>

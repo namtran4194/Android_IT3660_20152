@@ -7,6 +7,7 @@ import java.util.Locale;
 
 import Database.dbThu;
 
+import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
@@ -54,6 +55,7 @@ public class TienThu extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nhapkhoanthu);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         tenkhoanthu = (EditText) findViewById(R.id.editText_tenkhoanthu);
         sotienkhoanthu = (EditText) findViewById(R.id.editText_tienkhoanthu);

@@ -6,7 +6,7 @@
 
     <TextView
         android:id="@+id/textViewchi"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
@@ -25,10 +25,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_below="@+id/textView30">
 
         <TextView
@@ -60,10 +58,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_below="@+id/textView50">
 
         <TextView
@@ -100,10 +96,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_below="@+id/textView22">
 
         <TextView
@@ -129,10 +123,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_below="@+id/textView_tienchihientai">
 
         <TextView
@@ -140,7 +132,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Ngày"
+            android:text="Ngày:"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
@@ -168,10 +160,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout5"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_below="@+id/textView11">
 
         <TextView

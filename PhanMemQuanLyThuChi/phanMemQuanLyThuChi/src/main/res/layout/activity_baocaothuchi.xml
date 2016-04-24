@@ -6,7 +6,7 @@
 
     <TextView
         android:id="@+id/textView_title_hientai"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFF00"
         android:gravity="center"
@@ -15,7 +15,7 @@
 
     <TabHost
         android:id="@android:id/tabhost"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/textView_title_hientai">
 
@@ -43,8 +43,8 @@
 
                     <include
                         layout="@layout/listbaocao_hientai"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" />
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -55,8 +55,8 @@
 
                     <include
                         layout="@layout/listbaocao_thang"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" />
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
 
                 </LinearLayout>
 
@@ -68,8 +68,8 @@
 
                     <include
                         layout="@layout/listbaocao_quy"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" />
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -80,8 +80,8 @@
 
                     <include
                         layout="@layout/listbaocao_nam"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent" />
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
 
                 </LinearLayout>
             </FrameLayout>
