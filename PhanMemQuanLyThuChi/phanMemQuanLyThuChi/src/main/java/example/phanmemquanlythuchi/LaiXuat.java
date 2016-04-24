@@ -28,11 +28,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -69,7 +71,8 @@ class dbLaiXuat extends SQLiteOpenHelper {
 
 
 public class LaiXuat extends Activity {
-    EditText tennganhang, tiennganhang, laixuat;
+    EditText tiennganhang, laixuat;
+    Spinner tennganhang, suatennganhang;
     ImageButton save;
     ListView listlaixuat;
     String datetimeloc = "";
@@ -81,7 +84,7 @@ public class LaiXuat extends Activity {
     Cursor mCursorlaixuat;
     SimpleCursorAdapter mAdapter;
 
-    EditText suatennganhang, suatiennganhang, sualaixuat;
+    EditText suatiennganhang, sualaixuat;
     TextView suangaythang, ngaythang;
     ImageButton img_suangay;
     ImageButton img_savesua;
@@ -95,8 +98,10 @@ public class LaiXuat extends Activity {
     private TextView tv_kq;
 
     private Context context = this;
+    private ArrayAdapter<String> adapterBank;
+    String[] bankName = {"VietinBank", "CBBANK", "OceanBank", "GPBank", "AgriBank", "ACBank", "TPBank", "DongABank",
+            "SeABank", "ABBank", "Techcom bank", "VPBank", "SHBank", "VietABank", "PGBank", "VCBank", "BIDV", "HSBC", "CitiBank"};
 
-    @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,10 +109,13 @@ public class LaiXuat extends Activity {
         dblaixuat = new dbLaiXuat(this);
         mDblaixuat = dblaixuat.getWritableDatabase();
         ngaythang = (TextView) findViewById(R.id.editText_ngaylaixuat);
-        tennganhang = (EditText) findViewById(R.id.edName);
+        tennganhang = (Spinner) findViewById(R.id.edName);
         tiennganhang = (EditText) findViewById(R.id.edNum);
         laixuat = (EditText) findViewById(R.id.editLaiXuat);
         listlaixuat = (ListView) findViewById(R.id.lvHienThi1);
+
+        adapterBank = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, bankName);
+        tennganhang.setAdapter(adapterBank);
         ngaythang.setOnClickListener(new OnClickListener() {
 
             @Override
@@ -122,10 +130,7 @@ public class LaiXuat extends Activity {
             @SuppressWarnings("static-access")
             @Override
             public void onClick(View v) {
-                if (tennganhang.getText().toString().isEmpty()) {
-                    Toast toast = Toast.makeText(LaiXuat.this, "Bạn Chưa Nhập Tên", Toast.LENGTH_SHORT);
-                    toast.show();
-                } else if (tiennganhang.getText().toString().isEmpty() || checkZero(tiennganhang.getText().toString())) {
+                if (tiennganhang.getText().toString().isEmpty() || checkZero(tiennganhang.getText().toString())) {
                     Toast toast = Toast.makeText(LaiXuat.this, "Bạn Chưa Nhập Tiền", Toast.LENGTH_SHORT);
                     toast.show();
                 } else if (laixuat.getText().toString().isEmpty() || checkZero(laixuat.getText().toString())) {
@@ -133,12 +138,11 @@ public class LaiXuat extends Activity {
                     toast.show();
                 } else {
                     ContentValues cv = new ContentValues();
-                    cv.put(dbLaiXuat.COL_NAME, tennganhang.getText().toString());
+                    cv.put(dbLaiXuat.COL_NAME, tennganhang.getSelectedItem().toString());
                     cv.put(dbLaiXuat.COL_LAIXUAT, laixuat.getText().toString());
                     cv.put(dbLaiXuat.COL_TIEN, tiennganhang.getText().toString());
                     cv.put(dbLaiXuat.COL_DATE, ngaythang.getText().toString());
                     mDblaixuat.insert(dbLaiXuat.TABLE_NAME, null, cv);
-                    tennganhang.setText(null);
                     laixuat.setText(null);
                     tiennganhang.setText(null);
                     String[] columns = new String[]{"_id", dbLaiXuat.COL_NAME, dbLaiXuat.COL_DATE};
@@ -167,11 +171,12 @@ public class LaiXuat extends Activity {
                         View v = li.inflate(R.layout.t_sualaixuat, null, false);
                         dialogthu.setContentView(v);
                         dialogthu.setTitle("Sửa Lãi Xuất");
-                        suatennganhang = (EditText) dialogthu.findViewById(R.id.editText_suatenlaixuat);
+                        suatennganhang = (Spinner) dialogthu.findViewById(R.id.editText_suatenlaixuat);
+                        suatennganhang.setAdapter(adapterBank);
                         suatiennganhang = (EditText) dialogthu.findViewById(R.id.editText_suatienlaixuat);
                         sualaixuat = (EditText) dialogthu.findViewById(R.id.editText_sualaixuat);
                         suangaythang = (TextView) dialogthu.findViewById(R.id.textView_ngaythanglaixuat);
-                        String query = "select * from tblaixuat";
+                        String query = "select * from " + dbLaiXuat.TABLE_NAME;
                         mCursorlaixuat = mDblaixuat.rawQuery(query, null);
                         final ArrayList<Laixuat> arrngay = new ArrayList<Laixuat>();
                         if (mCursorlaixuat.moveToFirst()) {
@@ -185,7 +190,7 @@ public class LaiXuat extends Activity {
                                 arrngay.add(oblaixuat);
                             } while (mCursorlaixuat.moveToNext());
                         }
-                        suatennganhang.setText(arrngay.get(position).getTen());
+                        suatennganhang.setSelection(checkPosition(arrngay.get(position).getTen()));
                         suatiennganhang.setText(arrngay.get(position).getTien());
                         sualaixuat.setText(arrngay.get(position).getLaixuat());
                         suangaythang.setText(arrngay.get(position).getNgay());
@@ -202,7 +207,7 @@ public class LaiXuat extends Activity {
                             @Override
                             public void onClick(View v) {
                                 ContentValues cv = new ContentValues();
-                                cv.put(dbLaiXuat.COL_NAME, suatennganhang.getText().toString());
+                                cv.put(dbLaiXuat.COL_NAME, suatennganhang.getSelectedItem().toString());
                                 cv.put(dbLaiXuat.COL_TIEN, suatiennganhang.getText().toString());
                                 cv.put(dbLaiXuat.COL_DATE, suangaythang.getText().toString());
                                 cv.put(dbLaiXuat.COL_LAIXUAT, sualaixuat.getText().toString());
@@ -234,7 +239,7 @@ public class LaiXuat extends Activity {
                         edt_sothang = (EditText) dialogthu.findViewById(R.id.EditText_xemsoluongthang);
                         img_btn_kq = (ImageButton) dialogthu.findViewById(R.id.imageButton_dongyxem);
                         tv_kq = (TextView) dialogthu.findViewById(R.id.textView_xemtonglaixuat);
-                        String query = "select * from tblaixuat";
+                        String query = "select * from " + dbLaiXuat.TABLE_NAME;
                         mCursorlaixuat = mDblaixuat.rawQuery(query, null);
                         final ArrayList<Laixuat> arrngay = new ArrayList<Laixuat>();
                         if (mCursorlaixuat.moveToFirst()) {
@@ -290,6 +295,14 @@ public class LaiXuat extends Activity {
             e.printStackTrace();
         }
         return false;
+    }
+
+    public int checkPosition(String name) {
+        int i = 0;
+        for (; i < bankName.length; i++)
+            if (bankName[i].equals(name))
+                break;
+        return i;
     }
 
     public void dexuat() {
@@ -379,7 +392,7 @@ public class LaiXuat extends Activity {
         }
     }
 
-    @SuppressLint({"ValidFragment", "NewApi"})
+    @SuppressLint("ValidFragment")
     public class DatePickerFragment1 extends DialogFragment implements
             DatePickerDialog.OnDateSetListener {
 

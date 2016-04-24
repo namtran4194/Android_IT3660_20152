@@ -28,7 +28,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 public class TienChi extends Activity {
 
     EditText tenkhoanchi, sotienkhoanchi, ghichukhoanchi;
@@ -43,6 +42,7 @@ public class TienChi extends Activity {
     Cursor mCursorchi;
 
     String[] arrspinner = {"Ăn Uống", "Quần Áo", "Cho vay", "Sinh Hoạt", "Đi Lại", "Trả Nợ", "Khác"};
+
     ArrayAdapter<String> adapterchi = null;
 
     private String datetimeloc = "";
@@ -98,13 +98,19 @@ public class TienChi extends Activity {
                     Toast toast = Toast.makeText(TienChi.this, "Bạn Chưa Nhập Tiền", Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
-                    ContentValues cv = new ContentValues(2);
-                    cv.put(dbChi.COL_NAME, tenkhoanchi.getText().toString());
-                    cv.put(dbChi.COL_TIEN, sotienkhoanchi.getText().toString());
-                    cv.put(dbChi.COL_NHOM, nhomkhoanchi.getSelectedItem().toString());
-                    cv.put(dbChi.COL_GHICHU, ghichukhoanchi.getText().toString());
-                    cv.put(dbChi.COL_DATE, ngaykhoanchi.getText().toString());
+                    ContentValues cv = new ContentValues();
+                    String name = tenkhoanchi.getText().toString();
+                    String cost = sotienkhoanchi.getText().toString();
+                    String type = nhomkhoanchi.getSelectedItem().toString();
+                    String note = ghichukhoanchi.getText().toString();
+                    String date = ngaykhoanchi.getText().toString();
+                    cv.put(dbChi.COL_NAME, name);
+                    cv.put(dbChi.COL_TIEN, cost);
+                    cv.put(dbChi.COL_NHOM, type);
+                    cv.put(dbChi.COL_GHICHU, note);
+                    cv.put(dbChi.COL_DATE, date);
                     mDbchi.insert(dbChi.TABLE_NAME, null, cv);
+                    // reset view
                     tenkhoanchi.setText(null);
                     sotienkhoanchi.setText(null);
                     ghichukhoanchi.setText(null);

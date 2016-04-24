@@ -54,6 +54,7 @@ public class TienThu extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nhapkhoanthu);
+
         tenkhoanthu = (EditText) findViewById(R.id.editText_tenkhoanthu);
         sotienkhoanthu = (EditText) findViewById(R.id.editText_tienkhoanthu);
         ghichukhoanthu = (EditText) findViewById(R.id.editText_ghichukhoanthu);
@@ -110,13 +111,19 @@ public class TienThu extends Activity {
                     Toast toast = Toast.makeText(TienThu.this, "Bạn Chưa Nhập Tiền", Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
-                    ContentValues cv = new ContentValues(2);
-                    cv.put(dbThu.COL_NAME, tenkhoanthu.getText().toString());
-                    cv.put(dbThu.COL_TIEN, sotienkhoanthu.getText().toString());
-                    cv.put(dbThu.COL_NHOM, nhomkhoanthu.getSelectedItem().toString());
-                    cv.put(dbThu.COL_GHICHU, ghichukhoanthu.getText().toString());
-                    cv.put(dbThu.COL_DATE, ngaykhoanthu.getText().toString());
+                    ContentValues cv = new ContentValues();
+                    String name = tenkhoanthu.getText().toString();
+                    String cost = sotienkhoanthu.getText().toString();
+                    String type = nhomkhoanthu.getSelectedItem().toString();
+                    String note = ghichukhoanthu.getText().toString();
+                    String date = ngaykhoanthu.getText().toString();
+                    cv.put(dbThu.COL_NAME, name);
+                    cv.put(dbThu.COL_TIEN, cost);
+                    cv.put(dbThu.COL_NHOM, type);
+                    cv.put(dbThu.COL_GHICHU, note);
+                    cv.put(dbThu.COL_DATE, date);
                     mDbthu.insert(dbThu.TABLE_NAME, null, cv);
+                    // reset view
                     tenkhoanthu.setText(null);
                     sotienkhoanthu.setText(null);
                     ghichukhoanthu.setText(null);

@@ -38,7 +38,7 @@ public class TienThuChi {
     }
 
     public String getVND() {
-        return this.tien + "-VND";
+        return this.tien + " (VND)";
     }
 
     public String getUSD() {
@@ -51,7 +51,7 @@ public class TienThuChi {
         float a = f / 22000;
         DecimalFormat first = new DecimalFormat("#.##");
         String format_string = first.format(a);
-        cd = "" + format_string + "-" + "-USD";
+        cd = "" + format_string + " (USD)";
         return cd;
     }
 
@@ -83,7 +83,7 @@ public class TienThuChi {
         }
         for (NgoaiTe money : moneys) {
             if (money.kiHieu.equals(string)) {
-                m = money.tyGia + "-VND";
+                m = money.tyGia + " (VND)";
             }
         }
         return m;

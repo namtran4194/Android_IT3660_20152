@@ -42,7 +42,6 @@ import android.widget.TabHost;
 import android.widget.TextView;
 
 public class DanhSachThuChi extends Activity {
-
     public ArrayList<TienThuChi> sapxepthu = null;
     public ArrayList<TienThuChi> sapxepchi = null;
     public Context context = this;
@@ -90,6 +89,7 @@ public class DanhSachThuChi extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.baocaothuchi);
+
         listthu = (ListView) findViewById(R.id.listView_danhsachkhoanthu);
         listchi = (ListView) findViewById(R.id.listView_danhsachkhoanchi);
         dbthu = new dbThu(this);
@@ -142,11 +142,16 @@ public class DanhSachThuChi extends Activity {
                             @Override
                             public void onClick(View v) {
                                 ContentValues cv = new ContentValues();
-                                cv.put(dbThu.COL_NAME, suatenthu.getText().toString());
-                                cv.put(dbThu.COL_TIEN, suatienthu.getText().toString());
-                                cv.put(dbThu.COL_DATE, suangaythu.getText().toString());
-                                cv.put(dbThu.COL_NHOM, suanhomthu.getSelectedItem().toString());
-                                cv.put(dbThu.COL_GHICHU, suaghichuthu.getText().toString());
+                                final String name = suatenthu.getText().toString();
+                                final String cost = suatienthu.getText().toString();
+                                final String date = suangaythu.getText().toString();
+                                final String type = suanhomthu.getSelectedItem().toString();
+                                final String note = suaghichuthu.getText().toString();
+                                cv.put(dbThu.COL_NAME, name);
+                                cv.put(dbThu.COL_TIEN, cost);
+                                cv.put(dbThu.COL_DATE, date);
+                                cv.put(dbThu.COL_NHOM, type);
+                                cv.put(dbThu.COL_GHICHU, note);
                                 mDbthu.update(dbThu.TABLE_NAME, cv, "_id " + "=" + sapxepthu.get(position).getId(), null);
                                 danhSachThu();
                                 mDbthu.close();
