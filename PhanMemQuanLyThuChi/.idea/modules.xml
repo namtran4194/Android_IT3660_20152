@@ -3,8 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PhanMemQuanLyThuChi.iml" filepath="$PROJECT_DIR$/PhanMemQuanLyThuChi.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library_zhy_CircleMenu/library_zhy_CircleMenu.iml" filepath="$PROJECT_DIR$/library_zhy_CircleMenu/library_zhy_CircleMenu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/phanMemQuanLyThuChi/phanMemQuanLyThuChi.iml" filepath="$PROJECT_DIR$/phanMemQuanLyThuChi/phanMemQuanLyThuChi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhanMemQuanLyThuChi/phanMemQuanLyThuChi.iml" filepath="$PROJECT_DIR$/PhanMemQuanLyThuChi/phanMemQuanLyThuChi.iml" />
     </modules>
   </component>
 </project>

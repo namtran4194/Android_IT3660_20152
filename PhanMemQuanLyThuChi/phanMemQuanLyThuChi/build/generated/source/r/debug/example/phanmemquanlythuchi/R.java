@@ -18,27 +18,28 @@ public final class R {
         public static final int boder_dangnhap1=0x7f020000;
         public static final int danhmuc=0x7f020001;
         public static final int ic_launcher=0x7f020002;
-        public static final int icon_bank=0x7f020003;
-        public static final int icon_bieu_do=0x7f020004;
-        public static final int icon_chi=0x7f020005;
-        public static final int icon_danh_sach=0x7f020006;
-        public static final int icon_exit=0x7f020007;
-        public static final int icon_ok_small=0x7f020008;
-        public static final int icon_thu=0x7f020009;
-        public static final int icon_tien_te=0x7f02000a;
-        public static final int iconngaythang=0x7f02000b;
-        public static final int iconsave=0x7f02000c;
-        public static final int lichcongtac=0x7f02000d;
-        public static final int thang1=0x7f02000e;
-        public static final int thang10=0x7f02000f;
-        public static final int thang12=0x7f020010;
-        public static final int thang2=0x7f020011;
-        public static final int thang3=0x7f020012;
-        public static final int thang4=0x7f020013;
-        public static final int thang5=0x7f020014;
-        public static final int thang6=0x7f020015;
-        public static final int thang7=0x7f020016;
-        public static final int thang9=0x7f020017;
+        public static final int icon_bieu_do=0x7f020003;
+        public static final int icon_chi=0x7f020004;
+        public static final int icon_danh_sach=0x7f020005;
+        public static final int icon_exit=0x7f020006;
+        public static final int icon_ok_small=0x7f020007;
+        public static final int icon_thu=0x7f020008;
+        public static final int icon_tien_te=0x7f020009;
+        public static final int iconngaythang=0x7f02000a;
+        public static final int iconsave=0x7f02000b;
+        public static final int lichcongtac=0x7f02000c;
+        public static final int save_money=0x7f02000d;
+        public static final int sync=0x7f02000e;
+        public static final int thang1=0x7f02000f;
+        public static final int thang10=0x7f020010;
+        public static final int thang12=0x7f020011;
+        public static final int thang2=0x7f020012;
+        public static final int thang3=0x7f020013;
+        public static final int thang4=0x7f020014;
+        public static final int thang5=0x7f020015;
+        public static final int thang6=0x7f020016;
+        public static final int thang7=0x7f020017;
+        public static final int thang9=0x7f020018;
     }
     public static final class id {
         public static final int EditText_xemsoluongthang=0x7f06002f;
@@ -255,13 +256,11 @@ public final class R {
         public static final int khoan_chi=0x7f080002;
         public static final int khoan_thu=0x7f080003;
         public static final int lai_xuat=0x7f080004;
-        public static final int main=0x7f080005;
-        public static final int main_activity_thu_chi=0x7f080006;
+        public static final int main_activity_thu_chi=0x7f080005;
     }
     public static final class string {
         public static final int action_settings=0x7f070000;
         public static final int app_name=0x7f070001;
-        public static final int hello_world=0x7f070002;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 

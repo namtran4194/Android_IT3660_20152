@@ -9,15 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/library_zhy_CircleMenu" />
-            <option value="$PROJECT_DIR$/phanMemQuanLyThuChi" />
+            <option value="$PROJECT_DIR$/PhanMemQuanLyThuChi" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/library_zhy_CircleMenu" />
-            <option value="$PROJECT_DIR$/phanMemQuanLyThuChi" />
+            <option value="$PROJECT_DIR$/PhanMemQuanLyThuChi" />
           </set>
         </option>
       </GradleProjectSettings>

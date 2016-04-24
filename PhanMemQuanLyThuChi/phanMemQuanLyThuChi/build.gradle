@@ -16,11 +16,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
 }
 
 dependencies {
-    compile project(':library_zhy_CircleMenu')
-    compile 'com.android.support:support-v4:23.3.0'
     compile files('libs/achartengine-1.0.0.jar')
     compile files('libs/jsoup-1.8.2.jar')
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.firebase:firebase-client-android:2.3.1'
 }

@@ -2,12 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true">
 
@@ -18,12 +17,10 @@
             android:text="Tên ngân hàng:"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <EditText
+        <Spinner
             android:id="@+id/editText_suatenlaixuat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <TextView
@@ -51,7 +48,7 @@
 
         <EditText
             android:id="@+id/editText_suatienlaixuat"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -86,7 +83,7 @@
 
         <EditText
             android:id="@+id/editText_sualaixuat"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -138,7 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout4"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/icon_ok_small"
         android:src="@drawable/icon_ok_small" />
 

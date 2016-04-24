@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textViewsuachi30"
@@ -29,7 +28,7 @@
 
         <EditText
             android:id="@+id/editTextsuachi_tenkhoanthu"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -64,7 +63,7 @@
 
         <EditText
             android:id="@+id/editTextsuachi_tienkhoanthu"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -143,8 +142,7 @@
             android:id="@+id/imageButtonsuachi_chonngaykhoanthu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/iconngaythang"
-            android:src="@drawable/iconngaythang" />
+            android:background="@drawable/iconngaythang" />
 
     </LinearLayout>
 
@@ -173,7 +171,7 @@
 
         <EditText
             android:id="@+id/editTextsuachi_ghichukhoanthu"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -187,7 +185,6 @@
         android:layout_below="@+id/linearLayout5"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="@drawable/iconsave"
-        android:src="@drawable/iconsave" />
+        android:background="@drawable/iconsave" />
 
 </RelativeLayout>

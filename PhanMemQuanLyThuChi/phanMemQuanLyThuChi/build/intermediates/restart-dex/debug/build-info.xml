@@ -4,29 +4,39 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="600230700738046" >
+    timestamp="779912233459177" >
 
     <task
         name="javac"
-        duration="2641" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="143" />
+        duration="0" />
     <task
         name="verifier"
-        duration="187" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\build\outputs\apk\phanMemQuanLyThuChi-debug.apk"
-        type="MAIN" />
+        location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\PhanMemQuanLyThuChi\build\intermediates\res\resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="600230700738046" >
+    <build timestamp="778793222107088" >
         <artifact
-            location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\phanMemQuanLyThuChi\build\outputs\apk\phanMemQuanLyThuChi-debug.apk"
+            location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\PhanMemQuanLyThuChi\build\outputs\apk\phanMemQuanLyThuChi-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="779475486861169" >
+        <artifact
+            location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\PhanMemQuanLyThuChi\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="779912233459177" >
+        <artifact
+            location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\PhanMemQuanLyThuChi\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
