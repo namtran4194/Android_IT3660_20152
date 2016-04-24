@@ -4,7 +4,7 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="779912233459177" >
+    timestamp="23639378996962" >
 
     <task
         name="javac"
@@ -20,23 +20,13 @@
         duration="0" />
 
     <artifact
-        location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\PhanMemQuanLyThuChi\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
+        location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\PhanMemQuanLyThuChi\build\outputs\apk\phanMemQuanLyThuChi-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="778793222107088" >
+    <build timestamp="23639378996962" >
         <artifact
             location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\PhanMemQuanLyThuChi\build\outputs\apk\phanMemQuanLyThuChi-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="779475486861169" >
-        <artifact
-            location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\PhanMemQuanLyThuChi\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="779912233459177" >
-        <artifact
-            location="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\PhanMemQuanLyThuChi\PhanMemQuanLyThuChi\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

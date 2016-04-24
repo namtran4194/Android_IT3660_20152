@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\listbaocao_nam.xml"
     },
     {
-        "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\suakhoanthu.xml",
-        "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\suakhoanthu.xml"
-    },
-    {
         "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\t_custom_danhsachhientai.xml",
         "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\t_custom_danhsachhientai.xml"
+    },
+    {
+        "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\suakhoanthu.xml",
+        "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\suakhoanthu.xml"
     },
     {
         "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\t_custom_menu.xml",
@@ -32,20 +32,20 @@
         "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\activity_thuchi.xml"
     },
     {
+        "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\t_customlayout_thu.xml",
+        "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\t_customlayout_thu.xml"
+    },
+    {
         "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\activity_xemlaixuat.xml",
         "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\activity_xemlaixuat.xml"
     },
     {
-        "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\t_customlayout.xml",
-        "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\t_customlayout.xml"
+        "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\t_custom_danhsachquy.xml",
+        "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\t_custom_danhsachquy.xml"
     },
     {
         "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\nhapkhoanthu.xml",
         "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\nhapkhoanthu.xml"
-    },
-    {
-        "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\t_custom_danhsachquy.xml",
-        "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\t_custom_danhsachquy.xml"
     },
     {
         "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\listbaocao_thang.xml",
@@ -98,6 +98,10 @@
     {
         "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\activity_laixuat.xml",
         "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\activity_laixuat.xml"
+    },
+    {
+        "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\login_activity.xml",
+        "source": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\src\\main\\res\\layout\\login_activity.xml"
     },
     {
         "merged": "C:\\Users\\Legendary\\Documents\\GitHub\\Android_IT3660_20152\\PhanMemQuanLyThuChi\\PhanMemQuanLyThuChi\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baocaothuchi.xml",
