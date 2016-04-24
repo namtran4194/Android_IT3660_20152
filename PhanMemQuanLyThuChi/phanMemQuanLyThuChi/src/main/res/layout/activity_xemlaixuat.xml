@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -19,7 +18,7 @@
 
         <TextView
             android:id="@+id/TextView_xemtennganhang"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -51,7 +50,7 @@
 
         <TextView
             android:id="@+id/TextView_xemtienlaixuat"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -86,7 +85,7 @@
 
         <TextView
             android:id="@+id/TextView_xemlaixuat"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -131,7 +130,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout4"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/icon_ok_small"
         android:src="@drawable/icon_ok_small" />
 
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/textView3">
+        android:layout_below="@+id/imageButton_dongyxem">
 
         <TextView
             android:id="@+id/textView_40"
@@ -151,19 +151,10 @@
 
         <TextView
             android:id="@+id/textView_xemtonglaixuat"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.85"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/imageButton_dongyxem" />
-
 </RelativeLayout>

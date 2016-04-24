@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView"
@@ -41,7 +40,7 @@
 
         <EditText
             android:id="@+id/editText_tenkhoanchi"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -76,12 +75,13 @@
 
         <EditText
             android:id="@+id/editText_tienkhoanchi"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:hint="tiền chi"
             android:inputType="number" />
+
         <TextView
             android:id="@+id/tv_cash"
             android:layout_width="wrap_content"
@@ -115,8 +115,7 @@
         <Spinner
             android:id="@+id/spinner_nhomkhoanchi"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <TextView
@@ -154,8 +153,7 @@
             android:id="@+id/imageButton_chonngaykhoanchi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/iconngaythang"
-            android:src="@drawable/iconngaythang" />
+            android:background="@drawable/iconngaythang" />
 
     </LinearLayout>
 
@@ -184,7 +182,7 @@
 
         <EditText
             android:id="@+id/editText_ghichukhoanchi"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -198,7 +196,6 @@
         android:layout_below="@+id/linearLayout5"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="@drawable/iconsave"
-        android:src="@drawable/iconsave" />
+        android:background="@drawable/iconsave" />
 
 </RelativeLayout>
