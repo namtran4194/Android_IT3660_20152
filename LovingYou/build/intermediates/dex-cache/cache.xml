@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\LovingYou\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3407df4e35230f528c9a93fec56bb3a339030043">
+        <dex dex="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\LovingYou\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c997a47baa59f77d8dc1633735c55442536a80fb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\LovingYou\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3768c7a55d7fd4b6499ffacc28c2208a84ce1ef6">
+        <dex dex="C:\Users\Legendary\Documents\GitHub\Android_IT3660_20152\LovingYou\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f784a8e7a64b6e59fe5e92815af079e0de7ee359\classes.dex" />
+    </item>
+
+</items>
