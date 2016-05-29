@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Du Lịch Việt</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="huongdan">Khi đi du lịch thì 2 ứng dụng mà bạn không thể thiếu đó là Maps và Thời tiết..\n
+        Ở đây mình có làm 2 ứng dụng hỗ trợ các bạn.Tất nhiên chỉ ở mức tương đối.Với ứng dụng Thời tiết các bạn hãy nhập địa điểm không dấu vào nhé
+        Các bạn nên nhập như sau để hiển thị được chính xác địa điểm đó : \n
+        Moc Chau,Dien Bien
+    </string>
+    <string name="about">Đầu tiên mình xin cảm ơn các bạn đã sử dụng ứng dụng của mình..\n
+        Mình làm ứng dụng này mong muốn mang đến thông tin bổ ích về các địa điểm du lịch cho những bạn có sở thích du lịch tự túc như mình. \n
+        Ứng dụng có sử dụng thông tin từ các trang web về du lịch như :
+
+    </string>
+    <string name="email">Mong các bạn góp ý để mình hoàn thiện sản phẩn hơn cũng như ra nhiều tính năng mới hơn..Mọi thắc mắc đóng góp,vui lòng gửi về email: </string>
+    <string name="facebook_app_id">1803292989956788</string>
+    <string name="bacha">Bắc Hà là một huyện thuộc Đông Bắc Lào Cai, có nhiều danh thắng cảnh đẹp.. </string>
+    <string name="sapa">Sapa là một huyện vùng cao Tây Bắc của tỉnh Lào Cai với địa danh vô cùng... </string>
+    <string name="mucangchai">Mù Cang Chải là một huyện vùng cao của tỉnh Yên Bái phía bắc giáp... </string>
+    <string name="mocchau">Du khách có dịp đến với Mộc Châu một lần dù mùa hạ hay đông, ngày nắng... </string>
+    <string name="yty">Y Tý nằm ở độ cao trên 2.000m, lưng tựa vào dãy núi Nhìu Cồ San mà đỉnh... </string>
+    <string name="thungnai">Cách Hà Nội khoảng 100km, Thung Nai (một xã thuộc Cao Phong, Hòa Bình)... </string>
+    <string name="maichau">Nằm ở phía Tây của Hòa Bình, giáp với huyện Mộc Châu của Sơn La và....</string>
+    <string name="apachai">Lãnh thổ Việt Nam có 2 ngã ba biên giới rất đặc biệt là Ngã ba Đông...</string>
+    <string name="laichau">Trên bản đồ du lịch Tây Bắc có lẽ Lai Châu chưa phải là một điểm ... </string>
+    <string name="taxua">Nếu như trước đây khi nhắc đến Mộc Châu người ta đã quá quên với khí ...</string>
+    <string name="hagiang">Hà Giang từ lâu đã trở thành một điểm đến vô cùng thú vị đối với ...</string>
+    <string name="mauson">Mẫu Sơn được biết đến là khu nghỉ dưỡng từ thời Pháp thuộc với hàng ... </string>
+    <string name="dongcao">Một vài năm gần đây Đồng Cao được biết đến như một địa điểm phù hợp ... </string>
+    <string name="coto">Cô Tô là một quần đảo thuộc tỉnh Quảng Ninh. Đảo nằm cách bờ khoảng 22km ...</string>
+    <string name="quanlan">Quan Lạn là một hòn đảo đẹp ở Quảng Ninh nổi tiếng với khung cảnh thiên ...</string>
+    <string name="vinhhalong">Vịnh Hạ Long là một điểm du lịch bạn nên đi một lần trong đời. Bởi ... </string>
+    <string name="thainguyen">Là một tỉnh Đông Bắc Bộ nằm tiếp giáp Thủ đô Hà Nội, Thái Nguyên  ...</string>
+    <string name="hobabe"> Một trong những điểm đến đẹp của vùng Đông Bắc, nằm trên trục đường ...</string>
+    <string name="thacbangioc">Thác Bản Giốc là một trong số những con thác đẹp nhất tại Việt Nam ...</string>
+    <string name="tuyenquang">Lý thú nhất trong hành trình chinh phục danh thắng này là bạn sẽ có ...</string>
+    <string name="phutho">Từ lâu, Phú Thọ được biết đến là mảnh đất cội nguồn của dân tộc Việt Nam. ...</string>
+    <string name="tamdao">Khu du lịch Tam Đảo nằm trên dãy núi Tam Đảo ở độ cao trên 900 m so với mực ...</string>
+    <string name="catba">Quần đảo Cát Bà là quần thể gồm 367 đảo trong đó có đảo Cát Bà ở phía nam ...</string>
+    <string name="vinhlanha">Vịnh Lan Hạ nằm ở phía Đông đảo Cát Bà, trông ra cửa Vạn, liền kề với ... </string>
+    <string name="namdinh">Cách Hà Nội khoảng 90km, Nam Định là điểm đến hấp dẫn với du khách dù là ...</string>
+    <string name="bacninh">Bắc Ninh một mảnh đất cổ lâu đời với nhiếu nét truyền thông văn hóa đặc ... </string>
+    <string name="ninhbinh">Sau Sapa và Vịnh Hạ Long, Ninh Bình là một trong những đến hấp dẫn nhất ... </string>
+    <string name="haiduong">Hải Dương níu chân du khách với hàng trăm di tích văn hóa lịch sử và hàng ...</string>
+    <string name="hanam">Khám phá khung cảnh thiên nhiên hữu tình tại Ao Dong, ghé thăm khu tưởng niệm ...</string>
+    <string name="thaibinh">Thái Bình là một tỉnh đồng bằng, có địa hình bằng phẳng, sông ngòi, hồ ao ...</string>
+    <string name="hungyen">Rong chơi ở vựa lúa lớn nhất Bắc bộ, tham quan đệ nhị danh thắng miền ...</string>
+    <string name="hanoi">Hà Nội là thành phố trung tâm của miền Bắc Việt Nam, nổi tiếng khắp thế ...</string>
+    <string name="thanhhoa">Thanh Hoá, vùng đất vừa có rừng vàng, biển bạc vừa mang trong mình cả ...</string>
+    <string name="puluong">Pù Luông, Thanh Hóa là một điểm tham quan, khám phá mới có tên trên bản đồ ...</string>
+    <string name="nghean">Nghệ An là một tỉnh nằm ở vùng Bắc Trung Bộ Việt Nam, cách Hà Nội 291 km ...</string>
+    <string name="hatinh">Hà Tĩnh là một tỉnh miền Trung ít ai biết đến không nổi tiếng như Phú Quốc ...</string>
+    <string name="quangbinh">Du Lịch Quảng Bình có hai cái nhất đó là Động Phong Nha và Động Thiên Đường. ...</string>
+    <string name="quangtri">Quảng Trị là một tỉnh ven biển thuộc vùng Bắc Trung Bộ Việt Nam, với những  ...</string>
+    <string name="hue">Kinh đô Huế là thủ đô của quốc gia Việt Nam thống nhất từ năm 1802,sau khi ...</string>
+    <string name="buonmathuot">Buôn Ma Thuột (hay Ban Mê Thuột) là thành phố tỉnh lị của tỉnh Đắk Lắk ...</string>
+    <string name="daknong">Cũng giống như Đắk Lắk, Đắk Nông thu hút khách du lịch bởi những thác nước hùng vĩ ...</string>
+    <string name="gialai">Gia Lai là một tỉnh nổi tiếng ở Tây Nguyên với những cánh đồng Cafe và hương vị ...</string>
+    <string name="komtum">Kon Tum là tỉnh xa nhất về phía bắc của khu vực Tây Nguyên, là tỉnh có cửa khẩu ...</string>
+    <string name="lamdong">Đà lạt là một thành phố thơ mộng và sâu lắng. Mỗi lần đến với Đà lạt tôi lại ...</string>
+    <string name="danang">Pù Luông, Thanh Hóa là một điểm tham quan, khám phá mới có tên trên bản đồ ...</string>
+    <string name="hoian">Nghệ An là một tỉnh nằm ở vùng Bắc Trung Bộ Việt Nam, cách Hà Nội 291 km ...</string>
+    <string name="culaocham">Hà Tĩnh là một tỉnh miền Trung ít ai biết đến không nổi tiếng như Phú Quốc ...</string>
+    <string name="lyson">Du Lịch Quảng Bình có hai cái nhất đó là Động Phong Nha và Động Thiên Đường. ...</string>
+    <string name="quynhon">Quảng Trị là một tỉnh ven biển thuộc vùng Bắc Trung Bộ Việt Nam, với những  ...</string>
+    <string name="cucdong">Kinh đô Huế là thủ đô của quốc gia Việt Nam thống nhất từ năm 1802,sau khi ...</string>
+    <string name="nhatrang">Buôn Ma Thuột (hay Ban Mê Thuột) là thành phố tỉnh lị của tỉnh Đắk Lắk ...</string>
+    <string name="daobinhba">Cũng giống như Đắk Lắk, Đắk Nông thu hút khách du lịch bởi những thác nước hùng vĩ ...</string>
+    <string name="daobinhhung">Gia Lai là một tỉnh nổi tiếng ở Tây Nguyên với những cánh đồng Cafe và hương vị ...</string>
+    <string name="muine">Kon Tum là tỉnh xa nhất về phía bắc của khu vực Tây Nguyên, là tỉnh có cửa khẩu ...</string>
+    <string name="phuyen">Phú Yên là một tỉnh ven biển thuộc duyên hải nam trung bộ, phía bắc giáp Bình ...</string>
+    <string name="ninhthuan">Ninh Thuận với bãi biển đẹp trong xanh, nhiều danh thắng và di tích nổi tiếng ...</string>
+    <string name="saigon">Thành phố Hồ Chí Minh nằm ở giữa vùng Nam Bộ trù phú. Là thành phố đông dân và lớn ...</string>
+    <string name="vungtau">Vũng Tàu từ lâu đã được xem là một điểm đến du lịch hấp dẫn, bởi những vẻ đẹp ...</string>
+    <string name="binhduong">Bình Dương là một tỉnh ở miền Đông Nam bộ, phía bắc giáp tỉnh Bình Phước ...</string>
+    <string name="binhphuoc">Bình Phước là tỉnh biên giới miền núi thuộc vùng Đông Nam Bộ, có trung tâm là ...</string>
+    <string name="dongnai">Dù không phải là điểm du lịch nổi tiếng tại Việt Nam, nhưng tiềm năng du lịch ...</string>
+    <string name="tayninh">Cách TP HCM khoảng 100 km, du lịch Tây Ninh sẽ là điểm đến có nhiều điều thú vị ...</string>
+    <string name="phuquoc">Phú Quốc còn được mệnh danh là Đảo Ngọc, là hòn đảo lớn nhất của Việt Nam,...</string>
+    <string name="namdu">Nam Du là quần đảo xa nhất của huyện Kiên Hải (Kiên Giang), cách thành phố Rạch ...</string>
+    <string name="angiang">Nói đến du lịch Miền Tây thì bạn không thể bỏ qua An Giang, nơi còn được ...</string>
+    <string name="baclieu">Tỉnh Bạc Liêu nằm trên bán đảo Cà Mau, thuộc Đồng bằng sông Cửu Long, miền ...</string>
+    <string name="bentre">Bến Tre là một tỉnh thuộc đồng bằng Sông Cửu Long, được biết đến là quê hương ...</string>
+    <string name="cantho">Cần Thơ gạo trắng nước trong; Ai đi đến đó lòng không muốn về. Câu ca dao như nói ...</string>
+    <string name="dongthap">Đồng Tháp là một tỉnh nằm ở miền Tây Nam Bộ, thuộc vùng Đồng bằng sông Cửu Long ...</string>
+    <string name="haugiang">Hậu Giang là một tỉnh miền tây trù phú, vẫn giữ nguyên được nét hoang sơ, nên ...</string>
+    <string name="soctrang">Sóc Trăng là một tỉnh ven biển thuộc đồng bằng sông Cửu Long thuộc Việt Nam, ...</string>
+    <string name="tiengiang">Không chỉ là một trong những vựa cây trái lớn nhất của miền Tây, Tiền Giang ...</string>
+    <string name="travinh">Trà Vinh là tỉnh Duyên hải Đồng bằng sông Cửu Long, tiếp giáp với các tỉnh Bến ...</string>
+    <string name="vinhlong">Vi vu cùng đám bạn lướt về xứ miệt vườn Miền Tây sông nước theo kiểu du lịch ...</string>
+    <string name="camau">Cà Mau là tỉnh ven biển ở cực nam của Việt Nam, nằm trong khu vực Đồng bằng sông ...</string>
+    <string name="longan">Long An đóng vai trò cửa ngõ nối liền hai vùng Đông Nam Bộ và đồng bằng sông Cửu ...</string>
+    <string name="campuchia">Vương quốc Campuchia là điểm đến du lịch phổ biến của khu vực Đông Nam Á,thu hút ... </string>
+    <string name="indonesia">Indonesia là một quốc đảo nằm giữa hai lục địa Đông Nam Á và Châu Đại Dương. Đất ...</string>
+    <string name="lao">Lào – đất nước láng giềng xinh đẹp và bình yên, mê hoặc du khách với những ngôi chùa tôn nghiêm ...</string>
+    <string name="malaysia">Malaysia là đất nước Đông Nam Á giáp với Thái Lan, Singapore, Brunei và Indonesia, bao gồm ...</string>
+    <string name="myanmar">Myanmar là đất nước cổ kính với những di tích tôn giáo mang tính chất vĩ đại về quy mô ...</string>
+    <string name="philipines">Là một đảo quốc xinh đẹp ở khu vực Đông Nam Á, trong nhiều năm trở lại đây, Philippines...</string>
+    <string name="singapore">Quốc đảo sư tử Singapore là đất nước có nền chính trị ổn định, môi trường xanh - sạch - đẹp...</string>
+    <string name="thailan">Thái Lan nổi tiếng với ngành công nghiệp du lịch, là một trong những quốc gia thu hút nhiều ... </string>
+    <string name="hanquoc">Du lịch Hàn Quốc là một điểm đến tuyệt vời, chúng ta đã khá quen thuộc về xứ sở Kim Chi ...</string>
+    <string name="nhatban">Nhật Bản là đất nước có nền văn hóa đặc sắc cùng một hành trình lịch sử thú vị. Ngoài những ... </string>
+    <string name="dailoan">Đài Loan là một hòn đảo xinh đẹp nằm ở khu vực Đông Á, cách Trung Quốc Đại lục hơn 100 km ...</string>
+    <string name="trungquoc">Trung Quốc là một đất nước vô cùng rộng lớn với cảnh quan và con người đa dạng. Ngoài những...</string>
+    <string name="hongkong">Hồng Kông (Hong Kong) – nơi giao thoa văn hóa Đông Tây là một trong những thành phố du lịch ...</string>
+    <string name="tip1">Những ứng dụng giúp tìm đường, đổi tiền hay dịch nhiều ngôn ngữ... sẽ rất hữu ích cho những người ...</string>
+    <string name="tip2">Trong một vài năm trở lại đây phượt đã trở thành một điều mà mọi người phải nói đến là phong trào ...</string>
+    <string name="tip3">Trước mỗi chuyến đi việc chuẩn bị đồ đạc mang theo là vô cùng quan trọng, nhiều quá thì sẽ khiến ...</string>
+    <string name="tip4">Phượt bằng xe máy đối với nhiều bạn trẻ như là một niềm đam mê, với những bạn đã thường xuyên đi ...</string>
+    <string name="tip5">Hiện nay với sự phát triển của các tuyến xe khách chất lượng cao tới hầu hết các tỉnh thành trên ...</string>
+    <string name="tip6">Cùng với sự phát triển của hình thức tự đi du lịch, các mạng đặt phòng trực tuyến đã góp phần giúp ...</string>
+    <string name="tip7">Nhằm giúp các bạn có thêm những thông tin nếu trong trường hợp chuyến du lịch của bạn có địa bàn ...</string>
+    <string name="tip8">Dòng chảy rút xa bờ, còn gọi là dòng chảy xa bờ, dòng rip hay dòng rút bờ, là một dòng nước mạnh ...</string>
+    <string name="tip9">Nhóm biển hiệu lệnh gồm có 9 kiểu được đánh số thứ tự từ biển số 301 đến biển số 309 nhằm báo cho ...</string>
+    <string name="tip10">Nhóm biển báo cấm gồm có 39 kiểu được đánh số thứ tự từ biển số 101 đến biển số 139 nhằm báo điều ...</string>
+    <string name="tip11">Biển báo nguy hiểm gồm 46 kiểu được đánh số thứ tự từ biển số 201 đến biển số 246 nhằm báo cho ...</string>
+    <string name="tip12">Một số kinh nghiệm cho lần đầu tiên chuẩn bị cho một chuyến đi nước ngoài ...</string>
+    <string name="tip13">Chuẩn bị đủ giấy tờ, bình tĩnh làm thủ tục, có mặt tại cửa lên máy bay đúng giờ… sẽ giúp bạn không ...</string>
+    <string name="tip14">Bạn có thể đến những nơi chưa bao giờ được nhìn thấy, bắt gặp những điều thú vị, làm quen những người ...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

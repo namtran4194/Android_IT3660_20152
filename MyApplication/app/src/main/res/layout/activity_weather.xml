@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.example.trung_000.myapplication.Weather.WeatherActivity"
+    android:background="@drawable/backgroundweather1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutnhap"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <EditText
+            android:drawableLeft="@drawable/ic_search_white_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nhập địa chỉ (không dấu)..... "
+            android:textColorHint="#acacac"
+            android:id="@+id/edtnhap"
+            android:textColor="#ffffff"
+            android:background="@drawable/background_main"
+            />
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_search_white_241dp"
+            android:layout_gravity="center"
+            android:id="@+id/btnok"
+            />
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/txtdiachi"
+        android:textColor="#FFF"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/headerweather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txttime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgvcurrent"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtmain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="20sp"
+                    android:textColor="#FFF"
+                    />
+                <TextView
+                    android:id="@+id/txtdescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    style="15sp"
+                    android:textColor="#FFF"
+                    />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txttemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="60sp"
+                        android:textColor="#FFF"
+                        />
+                    <ImageView
+                        android:id="@+id/imgvhumidity"
+                        android:layout_gravity="bottom"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+                    <TextView
+                        android:id="@+id/txthumidity"
+                        android:layout_gravity="bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="#FFF"
+
+                        />
+                    <ImageView
+                        android:id="@+id/imgvspeed"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="bottom"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+                    <TextView
+                        android:id="@+id/txtwindspeed"
+                        android:layout_gravity="bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFF"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdubao"
+        android:textSize="17sp"
+        android:textColor="#FFF"
+        android:background="#99000000"
+        />
+    <TextView
+        android:id="@+id/txtline"
+        android:visibility="gone"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dfdfdf"
+        android:textSize="0.01sp"
+        />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv"
+        ></ListView>
+</LinearLayout>
+

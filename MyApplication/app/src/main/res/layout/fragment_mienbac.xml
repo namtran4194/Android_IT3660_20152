@@ -1,0 +1,208 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MienBac.MienbacFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:weightSum="1">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.4">
+          <ViewFlipper
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/idviewflipper">
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:scaleType="centerCrop"
+                      android:adjustViewBounds="true"
+                      android:src="@drawable/hanoi"
+                      />
+                  <TextView
+                      android:text="Hà Nội"
+                      style="@style/MyStyle"
+                      />
+              </RelativeLayout>
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/image2"
+                      android:scaleType="centerCrop"
+                      android:adjustViewBounds="true"
+                      />
+                  <TextView
+                      android:text="Mộc Châu"
+                      style="@style/MyStyle"
+                      />
+              </RelativeLayout>
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <ImageView
+                      android:id="@+id/image3"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:scaleType="centerCrop"
+                      android:adjustViewBounds="true"
+                      />
+                  <TextView
+                      android:text="Hà Giang"
+                      style="@style/MyStyle"
+                      />
+              </RelativeLayout>
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/image4"
+                      android:scaleType="centerCrop"
+                      android:adjustViewBounds="true"
+                      />
+                  <TextView
+                      android:text="Tam Đảo"
+                      style="@style/MyStyle"
+                      />
+              </RelativeLayout>
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <ImageView
+                      android:id="@+id/image5"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:scaleType="centerCrop"
+                      android:adjustViewBounds="true"
+                      />
+                  <TextView
+                      android:text="Vịnh Hạ Long"
+                      style="@style/MyStyle"
+                      />
+              </RelativeLayout>
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:id="@+id/image6"
+                      android:scaleType="centerCrop"
+                      android:adjustViewBounds="true"
+                      />
+                  <TextView
+                      style="@style/MyStyle"
+                      android:text="Sapa"
+                      />
+                  <Button
+                      android:layout_width="24dp"
+                      android:layout_height="48dp"
+                      android:background="@drawable/portfolioprevarrow"
+                      android:layout_centerVertical="true"
+                      />
+                  <Button
+                      android:layout_width="24dp"
+                      android:layout_height="48dp"
+                      android:background="@drawable/portfolionextarrow"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      />
+
+              </RelativeLayout>
+
+          </ViewFlipper>
+          <Button
+              android:layout_width="24dp"
+              android:layout_height="48dp"
+              android:background="@drawable/portfolioprevarrow"
+              android:layout_centerVertical="true"
+              android:id="@+id/btnprev"
+              />
+          <Button
+              android:id="@+id/btnnext"
+              android:layout_width="24dp"
+              android:layout_height="48dp"
+              android:background="@drawable/portfolionextarrow"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              />
+
+      </RelativeLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.3"
+          android:weightSum="1">
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="0.5"
+              >
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/taybac"
+                  android:id="@+id/taybac"
+                  />
+              <TextView
+                  style="@style/MyStyle"
+                  android:text="Tây Bắc Bộ"
+
+                  />
+          </RelativeLayout>
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="0.5"
+              >
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/halong1"
+                  android:id="@+id/dongbac"/>
+              <TextView
+                  style="@style/MyStyle"
+                  android:text="Đông Bắc Bộ"
+
+                  />
+          </RelativeLayout>
+
+
+
+      </LinearLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.3">
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/db"
+              android:id="@+id/dbsonghong"
+              />
+          <TextView
+              style="@style/MyStyle"
+              android:text="Đồng Bằng Sông Hồng"
+              />
+
+      </RelativeLayout>
+
+  </LinearLayout>
+
+
+</FrameLayout>

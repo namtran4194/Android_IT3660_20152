@@ -1,0 +1,150 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MienNam.MiennamFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/idviewflippermiennam">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/namdu1"/>
+                    <TextView
+                        android:text="Nam Du"
+                        style="@style/MyStyle"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/anh1"/>
+                    <TextView
+                        android:text="Sài Gòn"
+                        style="@style/MyStyle"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/anh2"/>
+                    <TextView
+                        android:text="Bà Rịa - Vũng Tàu"
+                        style="@style/MyStyle"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/anh3"/>
+                    <TextView
+                        android:text="Đồng Nai"
+                        style="@style/MyStyle"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/anh4"/>
+                    <TextView
+                        android:text="Châu Đốc (An Giang)"
+                        style="@style/MyStyle"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/anh5"/>
+                    <TextView
+                        android:text="Phú Quốc"
+                        style="@style/MyStyle"
+                        />
+                </RelativeLayout>
+
+
+            </ViewFlipper>
+            <Button
+                android:id="@+id/btnprev"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                android:background="@drawable/portfolioprevarrow"
+                android:layout_centerVertical="true"
+                />
+            <Button
+                android:id="@+id/btnnext"
+                android:layout_width="24dp"
+                android:layout_height="48dp"
+                android:background="@drawable/portfolionextarrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3">
+                <ImageView
+                    android:background="@drawable/namdu"
+                    android:id="@+id/imgvdnb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    style="@style/MyStyle"
+                    android:text="Đông Nam Bộ"
+                    />
+
+            </RelativeLayout>
+             <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3">
+                 <ImageView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/baria"
+                     android:id="@+id/imgvtnb"
+                     />
+                 <TextView
+                     style="@style/MyStyle"
+                     android:text="Tây Nam Bộ"
+                     />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

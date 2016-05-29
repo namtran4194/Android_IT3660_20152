@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+<item
+    android:title="Tin tức"
+    android:id="@+id/id_news"
+    android:icon="@drawable/news">
+
+</item>
+        <item
+            android:title="Phượt trong nước"
+            android:id="@+id/id_trongnuoc"
+            android:icon="@drawable/vietnam1"></item>
+        <item
+            android:id="@+id/id_nuocngoai"
+            android:title="Phượt Nước Ngoài"
+            android:icon="@drawable/globe"></item>
+        <item
+            android:title="Thông Tin"
+            android:id="@+id/id_about"
+            android:icon="@drawable/about"></item>
+    </group>
+<item
+    android:title="Hỗ Trợ Phượt">
+    <menu >
+        <group android:checkableBehavior="none">
+        <item
+            android:title="Tiện ích"
+            android:id="@+id/id_tienich"
+            android:icon="@drawable/maps"></item>
+            <item
+            android:title="Kinh Nghiệm"
+            android:id="@+id/id_kinhnghiem"
+            android:icon="@drawable/exp"></item>
+        </group>
+    </menu>
+</item>
+    <!--<item-->
+        <!--android:title="Thoát"-->
+        <!--android:id="@+id/id_exit"-->
+        <!--android:icon="@drawable/exit"></item>-->
+
+
+</menu>

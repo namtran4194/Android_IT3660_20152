@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.trung_000.myapplication.MapsFragment">
+    <LinearLayout
+        android:paddingLeft="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idsearch"
+        android:weightSum="1">
+        <EditText
+            android:paddingLeft="5dp"
+            android:id="@+id/edtsearch"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="Nhập địa chỉ cần tìm"
+            android:visibility="gone"
+            android:background="#FFF"
+
+
+            android:layout_weight="1.10" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Search"
+            android:id="@+id/btnseatch1"
+            android:layout_toRightOf="@+id/edtsearch"
+            android:visibility="gone"
+
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutfindpath"
+        android:visibility="gone"
+        >
+        <EditText
+            android:hint="Nhập địa chỉ xuất phát"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edtorigin"
+            />
+        <EditText
+            android:hint="Nhập địa chỉ muốn đến"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtdestination"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnfindpath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tìm đường"
+                />
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_distance"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 km"
+                android:id="@+id/txtDistance" />
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_clock"/>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 min"
+                android:id="@+id/txtDuration" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnok"
+                android:text="Đóng"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/maps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_search"
+            android:layout_marginTop="52dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnseatch"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/btndirection"
+            android:background="@drawable/direction"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btnseatch"
+            android:layout_alignLeft="@+id/btnseatch"
+            android:layout_alignStart="@+id/btnseatch" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#99000000"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtngay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày 19"
+
+            android:textColor="#FFF"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imgv"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29"
+
+            android:textColor="#FFF"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/min"
+            android:layout_toStartOf="@+id/min"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+        <TextView
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29"
+
+            android:layout_marginRight="10dp"
+            android:textColor="#73f6fd"
+
+            android:id="@+id/min" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eaeaea"
+        android:textSize="0.01sp"
+        />
+
+
+
+
+
+
+</LinearLayout>

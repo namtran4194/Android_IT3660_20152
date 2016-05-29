@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#ffffff"
+    >
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgv1"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+        <!--android:background="@drawable/defaultimage"-->
+        />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/txt1"
+        android:layout_toRightOf="@id/imgv1"
+        android:textColor="@color/abc_primary_text_material_light" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_toRightOf="@id/imgv1"
+        android:text="Vịnh Hạ Long là một điểm du lịch bạn nên đi một lần trong đời. Bởi phong cảnh "
+        android:id="@+id/txt2"
+        android:textSize="15sp"
+        android:textColor="@color/abc_primary_text_material_light" />
+
+</RelativeLayout>

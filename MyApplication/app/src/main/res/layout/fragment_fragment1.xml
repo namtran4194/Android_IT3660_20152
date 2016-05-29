@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:layout_weight="10"
+    android:id="@+id/main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="32dp"
+        android:layout_weight="3"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#ffffff"
+        android:paddingRight="32dp"
+        android:textSize="28sp"
+        android:text="Welcome to you"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="5">
+
+        <ImageView
+            android:background="@drawable/anh1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:textSize="16sp"
+        android:text="Hy vọng ứng dụng sẽ đem lại cho bạn những thông tin bổ ích"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="0.01sp"
+        android:background="#151515"
+        />
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+
+        >
+        <Button
+            android:id="@+id/btnskip"
+            android:background="#222222"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="SKIP"
+            android:textSize="15sp"
+            android:textColor="#FFF"
+            />
+        <Button
+            android:id="@+id/btnnext"
+            android:background="@drawable/ic_navigate_next_white_24dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="47dp"
+            android:layout_marginEnd="47dp" />
+    </RelativeLayout>
+</LinearLayout>
